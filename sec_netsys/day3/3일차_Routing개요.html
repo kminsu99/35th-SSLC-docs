@@ -1,0 +1,348 @@
+<style>
+article.page {max-width: 900px; margin: 0 auto; color: rgb(55, 53, 47); line-height: 1.5; white-space: pre-wrap; text-align: left;}
+article.page {-webkit-print-color-adjust: exact;}
+article.page, article.page * {box-sizing: border-box;
+	-webkit-print-color-adjust: exact;}
+article.page, article.page {margin: 0;
+	padding: 0;}
+article.page {margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);}
+article.page {line-height: 1.5;
+	white-space: pre-wrap;}
+article.page a, article.page a.visited {color: inherit;
+	text-decoration: underline;}
+article.page h1, article.page h2, article.page h3 {letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;}
+article.page h1 strong, article.page h2 strong, article.page h3 strong {font-weight: 600;}
+article.page .page-title {font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;}
+article.page h1 {font-size: 1.875rem;
+	margin-top: 1.875rem;}
+article.page h2 {font-size: 1.5rem;
+	margin-top: 1.5rem;}
+article.page h3 {font-size: 1.25rem;
+	margin-top: 1.25rem;}
+article.page .source {border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;}
+article.page .callout {border-radius: 10px;
+	padding: 1rem;
+	
+	-webkit-box-decoration-break: clone;
+	box-decoration-break: clone;}
+article.page .callout.block-color-default_background {border: 1px solid rgba(55, 53, 47, 0.09);}
+article.page figure {margin: 1.25em 0;
+	page-break-inside: avoid;}
+article.page details, article.page aside {margin: 1.25em 0;}
+article.page summary {page-break-after: avoid;
+	break-after: avoid;}
+article.page summary h1, article.page summary h2, article.page summary h3, article.page summary h4 {margin-top: 0;}
+article.page figcaption {opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;}
+article.page mark {background-color: transparent;}
+article.page .indented {padding-left: 1.5em;}
+article.page hr {background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);}
+article.page img {max-width: 100%;}
+article.page .collection-content-wrapper {overflow-x: auto;}
+article.page .collection-content {font-size: 0.875rem;}
+article.page .collection-content td {white-space: pre-wrap;
+	word-break: break-word;}
+article.page .column-list {display: flex;
+	gap: 46px;}
+article.page .column {min-width: 0;
+	overflow: hidden;}
+article.page .column > *:first-child {margin-top: 0;}
+article.page .table_of_contents-item {display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding-inline: 0.125rem;
+	padding-block: 0.375rem;}
+article.page .table_of_contents-indent-1 {margin-left: 1.5rem;}
+article.page .table_of_contents-indent-2 {margin-left: 3rem;}
+article.page .table_of_contents-indent-3 {margin-left: 4.5rem;}
+article.page .table_of_contents-link {text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);}
+article.page table, article.page th, article.page td {border: 1px solid rgba(55, 53, 47, 0.09);}
+article.page table {border-collapse: collapse;
+	border-left: none;
+	border-right: none;}
+article.page th, article.page td {font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;}
+article.page th {color: rgba(55, 53, 47, 0.6);}
+article.page ol, article.page ul {margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;}
+article.page li > ol:first-child, article.page li > ul:first-child {margin-block-start: 0.6em;}
+article.page ul > li {list-style: disc;}
+article.page ul.to-do-list {padding-inline-start: 0;}
+article.page ul.to-do-list > li {list-style: none;}
+article.page .to-do-children-checked {text-decoration: line-through;
+	opacity: 0.375;}
+article.page ul.toggle > li {list-style: none;}
+article.page ul {padding-inline-start: 1.7em;}
+article.page ul > li {padding-left: 0.1em;}
+article.page ol {padding-inline-start: 1.6em;}
+article.page ol.numbered-list.numbered-list-digits-2 {padding-inline-start: 2em;}
+article.page ol.numbered-list.numbered-list-digits-3plus {padding-inline-start: 2.4em;}
+article.page ol > li {padding-left: 0.2em;}
+article.page .mono ol {padding-inline-start: 2em;}
+article.page .mono ol > li {text-indent: -0.4em;}
+article.page .toggle {padding-inline-start: 0em;
+	list-style-type: none;}
+article.page .toggle > li > details {padding-left: 1.7em;}
+article.page .toggle > li > details > summary {margin-left: -1.1em;}
+article.page .selected-value {display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;}
+article.page .collection-title {display: inline-block;
+	margin-right: 1em;}
+article.page .page-description {margin-bottom: 2em;}
+article.page .simple-table {margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;}
+article.page .simple-table td {height: 29px;
+	min-width: 120px;}
+article.page .simple-table th {height: 29px;
+	min-width: 120px;}
+article.page .simple-table-header-color {background: rgb(247, 246, 243);
+	color: black;}
+article.page .simple-table-header {font-weight: 500;}
+article.page time {opacity: 0.5;}
+article.page .icon {display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;}
+article.page .icon[data-emoji]::before {content: attr(data-emoji);}
+article.page img.icon {border-radius: 3px;}
+article.page .callout img.notion-static-icon {width: 1em;
+	height: 1em;}
+article.page .callout p {margin: 0;}
+article.page .callout h1, article.page .callout h2, article.page .callout h3 {margin: 0 0 0.6rem;}
+article.page .user-icon {width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;}
+article.page .user-icon-inner {font-size: 0.8em;}
+article.page .text-icon {border: 1px solid #000;
+	text-align: center;}
+article.page .page-cover-image {display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;}
+article.page .page-header-icon {font-size: 3rem;
+	margin-bottom: 1rem;}
+article.page .page-header-icon-with-cover {margin-top: -0.72em;
+	margin-left: 0.07em;}
+article.page .page-header-icon img {border-radius: 3px;}
+article.page .link-to-page {margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;}
+article.page p > .user {opacity: 0.5;}
+article.page td > .user, article.page td > time {white-space: nowrap;}
+article.page input[type="checkbox"] {margin-right: 0.4em;
+	vertical-align: middle;}
+article.page p {margin-top: 0.5em;
+	margin-bottom: 0.5em;}
+article.page .image {border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;}
+article.page .code, article.page code {background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;}
+article.page code {color: #eb5757;}
+article.page .code {padding: 1.5em 1em;}
+article.page .code-wrap {white-space: pre-wrap;
+	word-break: break-all;}
+article.page .code > code {background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;}
+article.page blockquote {font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);}
+article.page blockquote.quote-large {font-size: 1.25em;}
+article.page .bookmark {text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;}
+article.page .bookmark-title {font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;}
+article.page .bookmark-text {display: flex;
+	flex-direction: column;}
+article.page .bookmark-info {flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;}
+article.page .bookmark-image {width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;}
+article.page .bookmark-description {color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;}
+article.page .bookmark-href {font-size: 0.75em;
+	margin-top: 0.25em;}
+article.page .tab {margin: 1.25em 0;
+	padding-inline: 1rem;
+	border: 1px solid rgba(55, 53, 47, 0.09);}
+article.page.sans, article.page .sans {font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";}
+article.page .code {font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace;}
+article.page.serif, article.page .serif {font-family: Lyon-Text, Georgia, ui-serif, serif;}
+article.page.mono, article.page .mono {font-family: iawriter-mono, Nitti, Menlo, Courier, monospace;}
+article.page .highlight-default {color: rgba(44, 44, 43, 1);}
+article.page .highlight-gray {color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);}
+article.page .highlight-brown {color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);}
+article.page .highlight-orange {color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);}
+article.page .highlight-yellow {color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);}
+article.page .highlight-teal {color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);}
+article.page .highlight-blue {color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);}
+article.page .highlight-purple {color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);}
+article.page .highlight-pink {color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);}
+article.page .highlight-red {color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);}
+article.page .highlight-default_background {color: rgba(44, 44, 43, 1);}
+article.page .highlight-gray_background {background: rgba(42, 28, 0, 0.07);}
+article.page .highlight-brown_background {background: rgba(139, 46, 0, 0.086);}
+article.page .highlight-orange_background {background: rgba(224, 101, 1, 0.129);}
+article.page .highlight-yellow_background {background: rgba(211, 168, 0, 0.137);}
+article.page .highlight-teal_background {background: rgba(0, 100, 45, 0.09);}
+article.page .highlight-blue_background {background: rgba(0, 124, 215, 0.094);}
+article.page .highlight-purple_background {background: rgba(102, 0, 178, 0.078);}
+article.page .highlight-pink_background {background: rgba(197, 0, 93, 0.086);}
+article.page .highlight-red_background {background: rgba(223, 22, 0, 0.094);}
+article.page .block-color-default {color: inherit;
+	fill: inherit;}
+article.page .block-color-gray {color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);}
+article.page .block-color-brown {color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);}
+article.page .block-color-orange {color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);}
+article.page .block-color-yellow {color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);}
+article.page .block-color-teal {color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);}
+article.page .block-color-blue {color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);}
+article.page .block-color-purple {color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);}
+article.page .block-color-pink {color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);}
+article.page .block-color-red {color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);}
+article.page .block-color-default_background {color: inherit;
+	fill: inherit;}
+article.page .block-color-gray_background {background: rgba(240, 239, 237, 1);}
+article.page .block-color-brown_background {background: rgba(245, 237, 233, 1);}
+article.page .block-color-orange_background {background: rgba(251, 235, 222, 1);}
+article.page .block-color-yellow_background {background: rgba(249, 243, 220, 1);}
+article.page .block-color-teal_background {background: rgba(232, 241, 236, 1);}
+article.page .block-color-blue_background {background: rgba(229, 242, 252, 1);}
+article.page .block-color-purple_background {background: rgba(243, 235, 249, 1);}
+article.page .block-color-pink_background {background: rgba(250, 233, 241, 1);}
+article.page .block-color-red_background {background: rgba(252, 233, 231, 1);}
+article.page .select-value-color-default {background-color: rgba(42, 28, 0, 0.07);}
+article.page .select-value-color-gray {background-color: rgba(28, 19, 1, 0.11);}
+article.page .select-value-color-brown {background-color: rgba(127, 51, 0, 0.156);}
+article.page .select-value-color-orange {background-color: rgba(196, 88, 0, 0.203);}
+article.page .select-value-color-yellow {background-color: rgba(209, 156, 0, 0.282);}
+article.page .select-value-color-green {background-color: rgba(0, 96, 38, 0.156);}
+article.page .select-value-color-blue {background-color: rgba(0, 118, 217, 0.203);}
+article.page .select-value-color-purple {background-color: rgba(92, 0, 163, 0.141);}
+article.page .select-value-color-pink {background-color: rgba(183, 0, 78, 0.152);}
+article.page .select-value-color-red {background-color: rgba(206, 24, 0, 0.164);}
+article.page .checkbox {display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;}
+article.page .checkbox-on {background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");}
+article.page .checkbox-off {background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");}
+/* toggle-extras */
+article.page details {border-top: 3px solid rgb(55, 53, 47); border-bottom: 3px solid rgb(55, 53, 47); padding: 0.6em 0; margin: 1.5em 0;}
+article.page details details {border-width: 2px; border-color: rgba(55, 53, 47, 0.45);}
+article.page details > summary {cursor: pointer;}
+article.page details > summary::after {content: "열기"; margin-left: 0.6em; padding: 0.1em 0.5em; font-size: 0.75em; font-weight: 500; font-style: normal; color: rgb(120, 119, 116); background: rgba(135, 131, 120, 0.15); border-radius: 4px; vertical-align: 0.1em;}
+article.page details[open] > summary::after {content: "닫기";}
+</style><article id="3f32fc0c-d770-8084-ab34-d3c9464eac58" class="page sans"><header><h1 class="page-title" dir="auto">3일차 10/08</h1><p class="page-description" dir="auto"></p></header><div class="page-body"><h1 id="3f32fc0c-d770-80ce-b496-ccf8c837fd8b" class="" dir="auto">Routing 개요</h1><h2 id="3f32fc0c-d770-8092-bf93-d147a6a33370" class="" dir="auto">Routers의 구성요소</h2><p id="3f32fc0c-d770-800a-b337-ee6362de022b" class="" dir="auto">Routers의 구성요소<div class="indented"><p id="3f32fc0c-d770-80d7-a77d-ed379c068a4b" class="" dir="auto">Router의 구성요소 : CPU, Motherboard, RAM, ROM</p><p id="3f32fc0c-d770-801f-8b54-e47d51407816" class="" dir="auto">2종류 port :<div class="indented"><p id="3f32fc0c-d770-8097-9ab4-e45937b00ab4" class="" dir="auto">Console : 시스템 관리를 위한 Port ← Mgmt Port</p><p id="3f32fc0c-d770-8070-aec8-e5f291de873f" class="" dir="auto">Network: 여러 종류의 LAN/WAN 연결 Ports ← Data 전송 Port</p></div></p><figure id="3f32fc0c-d770-80c0-8e0e-f9cd60764be5" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image.png"><img style="width:703.984375px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image.png"/></a></figure></div></p><h2 id="3f32fc0c-d770-8014-bd96-ef4dfc2aca3e" class="" dir="auto">Routers의 필요성</h2><figure id="3f32fc0c-d770-802e-96a1-ce1d8acb7447" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%201.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%201.png"><img style="width:703.984375px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%201.png"/></a></figure><h2 id="3f32fc0c-d770-8002-85d4-e3a4245de9c2" class="" dir="auto">Routing Table</h2><figure id="3f32fc0c-d770-80e4-8e2b-c96c286ddcbe" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%202.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%202.png"><img style="width:703.96875px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%202.png"/></a></figure><h2 id="3f32fc0c-d770-8059-a3fd-ef4439b824a1" class="" dir="auto">Routers의 동작원리</h2><figure id="3f32fc0c-d770-804b-ac2a-c5034242dac4" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%203.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%203.png"><img style="width:703.984375px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%203.png"/></a></figure><h2 id="3f32fc0c-d770-807c-aad0-c5030e264a8b" class="" dir="auto">Routing Table의 경로</h2><p id="3f32fc0c-d770-808f-bf36-e5769030b994" class="" dir="auto">라우터가 직접 인식하는 경로<div class="indented"><p id="3f32fc0c-d770-808a-a1ad-fd9643a16e54" class="" dir="auto">Directly connected : Router에 직접 연결된 Network 정보</p></div></p><p id="3f32fc0c-d770-80ae-9463-c9332aea3329" class="" dir="auto">학습에 의해 인식되는 경로<div class="indented"><p id="3f32fc0c-d770-8022-a4a5-e68d00ac29a9" class="" dir="auto">Static routing : 관리자에 의해 수동으로 생성된 경로 정보</p><p id="3f32fc0c-d770-805a-9307-c9a30681d21d" class="" dir="auto">Dynamic routing : 다른 Router들로 부터 학습한 경로정보</p></div></p><p id="3f32fc0c-d770-8029-a096-e6e522d6b9b5" class="" dir="auto">
+</p><h2 id="3f32fc0c-d770-8004-acef-d583ddc41ee5" class="" dir="auto">Static Route 설정</h2><figure id="3f32fc0c-d770-805d-bbb7-fc69549df8a1" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%204.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%204.png"><img style="width:703.96875px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%204.png"/></a></figure><figure id="3f32fc0c-d770-80d3-ae73-fa6a835325b5" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%205.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%205.png"><img style="width:703.96875px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%205.png"/></a></figure><p id="3f32fc0c-d770-803f-b63f-e03a8071fb45" class="" dir="auto">Stub Network<div class="indented"><p id="3f32fc0c-d770-8079-9016-eca4a4014cb0" class="" dir="auto">외부와 연결 통로 1개만 있음</p><p id="3f32fc0c-d770-8026-82c0-d561f2e95eb4" class="" dir="auto">Default route 쓸 수 있음</p><p id="3f32fc0c-d770-8053-a11e-f9f4248cd7a8" class="" dir="auto"><code>ip route 0.0.0.0 0.0.0.0 172.16.2.2</code></p></div></p><hr id="3f32fc0c-d770-8060-b2fe-f202de48963b" dir="auto"/><h2 id="3f32fc0c-d770-802d-8525-cc5eba3c7b49" class="" dir="auto">라우터 구조 실습</h2><p id="3f32fc0c-d770-805f-8f2e-c659d38451b7" class="" dir="auto">아래 그림대로 구조만들어 보기</p><figure id="3f32fc0c-d770-80c3-8c43-ca916a060b5f" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%206.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%206.png"><img style="width:703.984375px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%206.png"/></a></figure><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="3f32fc0c-d770-809e-a2f2-fd183e03b98d" class="code code-wrap"><code style="white-space:pre-wrap;word-break:break-all">hostname &quot;호스트명&quot;
+RA에서 hostname RA
+RB에서 hostname RB</code></pre><p id="3f32fc0c-d770-806b-b515-f1bb90c0ad18" class="" dir="auto">RA<div class="indented"><pre id="3f32fc0c-d770-80c5-ba04-ee1efa59e571" class="code code-wrap"><code style="white-space:pre-wrap;word-break:break-all">Router&gt;en
+Router#conf t
+Router(config)#int f0/0
+Router(config-if)#ip addr 192.168.1.1 255.255.255.0
+Router(config-if)#no shut
+Router(config-if)#int f0/1
+Router(config-if)#ip addr 192.168.12.1 255.255.255.0
+Router(config-if)#no shut
+Router(config-if)#exit
+Router(config)#ip route 192.168.2.0 255.255.255.0 192.168.12.2</code></pre><figure id="3f32fc0c-d770-80c3-936c-ed674feb62c4" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%207.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%207.png"><img style="width:625.984375px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%207.png"/></a></figure><pre id="3f32fc0c-d770-8027-b099-c1772536e3dc" class="code code-wrap"><code style="white-space:pre-wrap;word-break:break-all">RB#sh ip int brie
+RB#sh ip route</code></pre><figure id="3f32fc0c-d770-80ff-9cbd-e66ce3113f27" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%208.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%208.png"><img style="width:627.984375px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%208.png"/></a></figure></div></p><p id="3f32fc0c-d770-80c5-805b-c0401cc07623" class="" dir="auto">
+</p><p id="3f32fc0c-d770-8007-ba33-db5d430085bd" class="" dir="auto">RB<div class="indented"><pre id="3f32fc0c-d770-8065-86b1-cf41bc487c0d" class="code code-wrap"><code style="white-space:pre-wrap;word-break:break-all">Router&gt;en
+Router#conf t
+Router(config)#int f0/0
+Router(config-if)#ip addr 192.168.2.1 255.255.255.0
+Router(config-if)#int f0/1
+Router(config-if)#ip addr 192.168.12.2 255.255.255.0
+Router(config-if)#no shut
+Router(config-if)#int f0/0
+Router(config-if)#no shut
+Router(config-if)#exit
+Router(config)#ip route 192.168.1.0 255.255.255.0 192.168.12.1</code></pre><figure id="3f32fc0c-d770-8056-8114-cb069bc2a87a" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%209.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%209.png"><img style="width:642.96875px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%209.png"/></a></figure><pre id="3f32fc0c-d770-807b-80d9-c4cd0e7ea7b8" class="code code-wrap"><code style="white-space:pre-wrap;word-break:break-all">RA#sh ip int brie
+RA#sh ip route</code></pre><figure id="3f32fc0c-d770-8052-a914-d518c8c0f7d6" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2010.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2010.png"><img style="width:625.96875px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2010.png"/></a></figure><p id="3f32fc0c-d770-80a4-b96e-d5c8039bdffc" class="" dir="auto">RB → RA ping “port RA f0/0”</p><figure id="3f32fc0c-d770-8077-a767-c025f4e15dbf" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2011.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2011.png"><img style="width:631.921875px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2011.png"/></a></figure></div></p><p id="3f32fc0c-d770-80f7-ab72-deb61c847e8f" class="" dir="auto">ip, gateway 설정 후 핑테스트</p><p id="3f32fc0c-d770-8067-9b1a-c33b1730aa9e" class="" dir="auto">PC A<div class="indented"><figure id="3f32fc0c-d770-80bb-87f4-c8ac6cac36cf" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2012.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2012.png"><img style="width:601.96875px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2012.png"/></a></figure><figure id="3f32fc0c-d770-80aa-9c94-fa59afe59953" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2013.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2013.png"><img style="width:624.984375px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2013.png"/></a></figure></div></p><p id="3f32fc0c-d770-8019-8978-dec9132717aa" class="" dir="auto">PC B<div class="indented"><figure id="3f32fc0c-d770-8045-b240-e4f33d8cbddb" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2014.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2014.png"><img style="width:607.96875px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2014.png"/></a></figure><figure id="3f32fc0c-d770-8096-b0e1-c55aba9bf62e" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2015.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2015.png"><img style="width:621.984375px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2015.png"/></a></figure></div></p><p id="3f32fc0c-d770-8083-802f-d84879162cb2" class="" dir="auto">A to B ICMP<div class="indented"><figure id="3f32fc0c-d770-803f-9066-d061ca425b18" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/20261008-001.gif" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/20261008-001.gif"><img style="width:451.96875px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/20261008-001.gif"/></a></figure></div></p><p id="3f32fc0c-d770-807f-9e8c-cc546a9d6b61" class="" dir="auto">현재 ip 주소</p><aside class="block-color-gray_background callout" data-notion-callout="" data-notion-callout-icon="📎" data-notion-callout-background="gray_background" style="white-space:pre-wrap;display:flex" id="3f32fc0c-d770-8092-abee-db00428984f6" dir="ltr"><div style="font-size:1.5em"><span class="icon" data-emoji="📎"></span></div><div style="width:100%"><p id="3f32fc0c-d770-80d9-91b3-f3544c9b2f5d" class="" dir="auto">Router<div class="indented"><p id="3f32fc0c-d770-807b-8b40-cf75bfeb3d4b" class="" dir="auto">RA. F0/0 = 1.1, F0/1 = 12.1<br/>RB. F0/0 = 2.1, F0/1 = 12.2 </p></div></p><p id="3f32fc0c-d770-80a3-9c90-e5852c3d7f1b" class="" dir="auto">PC<div class="indented"><p id="3f32fc0c-d770-8003-b8c8-fdf79c9dc259" class="" dir="auto">A. ip= 1.10, Gateway = 1.1<br/>B. ip= 2.10, Gateway = 2.1</p></div></p></div></aside><p id="3f32fc0c-d770-8065-8c1c-cd7dec0225c9" class="" dir="auto">
+</p><pre id="3f32fc0c-d770-80b1-94b9-dbd9b05719b9" class="code code-wrap"><code style="white-space:pre-wrap;word-break:break-all">S    192.168.1.0/24 [1/0] via 192.168.12.1</code></pre><table id="3f32fc0c-d770-8086-b3f0-e21224e703e9" class="simple-table" dir="ltr"><thead class="simple-table-header"><tr id="3f32fc0c-d770-80a7-a861-c50d1641ac72" dir="ltr"><th id=":gUZ" class="simple-table-header-color simple-table-header">부분</th><th id="{xbP" class="simple-table-header-color simple-table-header">의미</th></tr></thead><tbody><tr id="3f32fc0c-d770-80c8-9404-f9f8986a2cb4" dir="ltr"><td id=":gUZ" class=""><code>S</code></td><td id="{xbP" class="">정적 경로</td></tr><tr id="3f32fc0c-d770-8002-83f0-d9bdd0e2466e" dir="ltr"><td id=":gUZ" class=""><code>192.168.1.0/24</code></td><td id="{xbP" class="">목적지 네트워크</td></tr><tr id="3f32fc0c-d770-80f7-b77e-d8114ed56257" dir="ltr"><td id=":gUZ" class=""><code>[1/0]</code></td><td id="{xbP" class="">[관리 거리 / 메트릭]</td></tr><tr id="3f32fc0c-d770-804d-a1a4-e405a0ea3d7c" dir="ltr"><td id=":gUZ" class=""><code>via 192.168.12.1</code></td><td id="{xbP" class="">다음 홉, 즉 패킷을 넘겨줄 라우터 주소</td></tr></tbody></table><p id="3f32fc0c-d770-8029-b069-eb7f16c19d4f" class="" dir="auto">
+</p><p id="3f32fc0c-d770-80b1-bcb6-dd3792771aef" class="" dir="auto">진행 과정</p><ol type="1" id="3f32fc0c-d770-805b-8fa5-ceb4b00d1381" class="numbered-list" start="1" dir="auto"><li><strong>PC A 판단</strong> :  A→B, B가 같은 네트워크인가? → 아님 → Gateway로 보내야함 → Gateway(1.1)의 MAC addr 을 모름<br/>실행 : ARP Request, Broadcast [ 1.1(G/T)의 MAC addr을 찾습니다]<table id="3f32fc0c-d770-80b9-b95f-e729df48794f" class="simple-table" dir="ltr"><thead class="simple-table-header"><tr id="3f32fc0c-d770-80e0-90f6-c00a1e195bb4" dir="ltr"><th id="^GA?" class="simple-table-header-color simple-table-header" style="width:85.328125px">구간</th><th id="e?FF" class="simple-table-header-color simple-table-header" style="width:85.328125px">Src MAC</th><th id="\?uG" class="simple-table-header-color simple-table-header" style="width:113.328125px">Dst MAC</th><th id=":tH`" class="simple-table-header-color simple-table-header">Src IP</th><th id="&gt;gWN" class="simple-table-header-color simple-table-header">Dst IP</th></tr></thead><tbody><tr id="3f32fc0c-d770-8018-a00b-c628ea2ec414" dir="ltr"><td id="^GA?" class="" style="width:85.328125px">A→RA</td><td id="e?FF" class="" style="width:85.328125px">A</td><td id="\?uG" class="" style="width:113.328125px">FFFF.FFFF.FFFF</td><td id=":tH`" class="">1.10(A)</td><td id="&gt;gWN" class="">1.1(RA f0/0)</td></tr></tbody></table></li></ol><ol type="1" id="3f32fc0c-d770-8059-9bb8-d951ebdc7a01" class="numbered-list" start="2" dir="auto"><li><strong>RA 판단</strong> :  내가 1.1(G/T)인가? → 맞음<br/>실행 : ARP Reply, Unicast [내가 1.1(G/T)입니다]<table id="3f32fc0c-d770-8062-bcbf-e114d3fda588" class="simple-table" dir="ltr"><thead class="simple-table-header"><tr id="3f32fc0c-d770-803c-981b-c657eafff84c" dir="ltr"><th id="^GA?" class="simple-table-header-color simple-table-header" style="width:85.328125px">구간</th><th id="e?FF" class="simple-table-header-color simple-table-header" style="width:85.328125px">Src MAC</th><th id="\?uG" class="simple-table-header-color simple-table-header" style="width:113.328125px">Dst MAC</th><th id=":tH`" class="simple-table-header-color simple-table-header">Src IP</th><th id="&gt;gWN" class="simple-table-header-color simple-table-header">Dst IP</th></tr></thead><tbody><tr id="3f32fc0c-d770-807b-9506-fe03606c34ca" dir="ltr"><td id="^GA?" class="" style="width:85.328125px">RA→A</td><td id="e?FF" class="" style="width:85.328125px">RA f0/0</td><td id="\?uG" class="" style="width:113.328125px">A</td><td id=":tH`" class="">1.1(RA f0/0)</td><td id="&gt;gWN" class="">1.10(A)</td></tr></tbody></table></li></ol><ol type="1" id="3f32fc0c-d770-8008-952a-cc42990a59c4" class="numbered-list" start="3" dir="auto"><li><strong>PC A</strong> : DestMAC을 알아냈다 → 게이트웨이로 ICMP를 보냄<br/>실행 : ICMP Echo Request <table id="3f32fc0c-d770-8011-8066-df1ae5eacd35" class="simple-table" dir="ltr"><thead class="simple-table-header"><tr id="3f32fc0c-d770-802b-a094-d5d6aad49665" dir="ltr"><th id="^GA?" class="simple-table-header-color simple-table-header" style="width:85.328125px">구간</th><th id="e?FF" class="simple-table-header-color simple-table-header" style="width:85.328125px">Src MAC</th><th id="\?uG" class="simple-table-header-color simple-table-header" style="width:113.328125px">Dst MAC</th><th id=":tH`" class="simple-table-header-color simple-table-header">Src IP</th><th id="&gt;gWN" class="simple-table-header-color simple-table-header">Dst IP</th></tr></thead><tbody><tr id="3f32fc0c-d770-80d2-b792-e5c3868a6c90" dir="ltr"><td id="^GA?" class="" style="width:85.328125px">A→RA</td><td id="e?FF" class="" style="width:85.328125px">A</td><td id="\?uG" class="" style="width:113.328125px">RA f0/0</td><td id=":tH`" class="">1.10(A)</td><td id="&gt;gWN" class="">2.10(B)</td></tr></tbody></table></li></ol><ol type="1" id="3f32fc0c-d770-8002-bb94-d48ad4c07173" class="numbered-list" start="4" dir="auto"><li><strong>RA 판단</strong> : S 2.0 via 12.2 매칭 → 12.2(RB f0/1) MAC을 모름<br/>실행 : ARP Request<table id="3f32fc0c-d770-803b-8c73-d8040a9daedb" class="simple-table" dir="ltr"><thead class="simple-table-header"><tr id="3f32fc0c-d770-8038-96f9-c6c47d327607" dir="ltr"><th id="^GA?" class="simple-table-header-color simple-table-header" style="width:85.328125px">구간</th><th id="e?FF" class="simple-table-header-color simple-table-header" style="width:85.328125px">Src MAC</th><th id="\?uG" class="simple-table-header-color simple-table-header" style="width:113.328125px">Dst MAC</th><th id=":tH`" class="simple-table-header-color simple-table-header">Src IP</th><th id="&gt;gWN" class="simple-table-header-color simple-table-header">Dst IP</th></tr></thead><tbody><tr id="3f32fc0c-d770-805e-9c0f-ddb99840b970" dir="ltr"><td id="^GA?" class="" style="width:85.328125px">RA→RB</td><td id="e?FF" class="" style="width:85.328125px">RA f0/0</td><td id="\?uG" class="" style="width:113.328125px">FFFF.FFFF.FFFF</td><td id=":tH`" class="">12.1(RA f0/0)</td><td id="&gt;gWN" class="">12.2(RB f0/1)</td></tr></tbody></table></li></ol><ol type="1" id="3f32fc0c-d770-80e5-bc08-d42d1f9e869a" class="numbered-list" start="5" dir="auto"><li><strong>RB 판단</strong> : 내가 12.2인가? → 맞음 (RA의 IP/MAC을 캐시에 저장)<br/>실행 : ARP Reply, Unicast [내가 12.2입니다]<table id="3f32fc0c-d770-8028-9e71-d9a2ce14d822" class="simple-table" dir="ltr"><thead class="simple-table-header"><tr id="3f32fc0c-d770-8004-b7a7-d092f7deae97" dir="ltr"><th id="|\Hf" class="simple-table-header-color simple-table-header" style="width:84px">구간</th><th id="?\vw" class="simple-table-header-color simple-table-header" style="width:85px">Src MAC</th><th id="c]gH" class="simple-table-header-color simple-table-header" style="width:111px">Dst MAC</th><th id="&gt;Rl~" class="simple-table-header-color simple-table-header" style="width:119px">Src IP</th><th id="SldX" class="simple-table-header-color simple-table-header">Dst IP</th></tr></thead><tbody><tr id="3f32fc0c-d770-80a9-9bd0-e96bf1e420ab" dir="ltr"><td id="|\Hf" class="" style="width:84px">RA→RB</td><td id="?\vw" class="" style="width:85px">RA f0/0</td><td id="c]gH" class="" style="width:111px">FFFF.FFFF.FFFF</td><td id="&gt;Rl~" class="" style="width:119px">1.1(RA f0/0)</td><td id="SldX" class="">1.10(A)</td></tr></tbody></table></li></ol><ol type="1" id="3f32fc0c-d770-80d2-80b6-f62a32213b06" class="numbered-list" start="6" dir="auto"><li><strong> RA</strong> : 다음 홉 MAC을 알아냈다 → RB로 ICMP 전달 (TTL 128→127)<br/>실행 : ICMP Echo Request<table id="3f32fc0c-d770-809b-a003-f5139d32668b" class="simple-table" dir="ltr"><thead class="simple-table-header"><tr id="3f32fc0c-d770-80c8-8064-d704c179226f" dir="ltr"><th id="UtSg" class="simple-table-header-color simple-table-header">구간</th><th id="I~{i" class="simple-table-header-color simple-table-header">Src MAC</th><th id="_E_|" class="simple-table-header-color simple-table-header">Dst MAC</th><th id=";EnE" class="simple-table-header-color simple-table-header">Src IP</th><th id="DnyU" class="simple-table-header-color simple-table-header">Dst IP</th></tr></thead><tbody><tr id="3f32fc0c-d770-8023-88f2-f7da9221d4d6" dir="ltr"><td id="UtSg" class="">RA→RB</td><td id="I~{i" class="">RA f0/1</td><td id="_E_|" class="">RB f0/1</td><td id=";EnE" class="">1.10(A)</td><td id="DnyU" class="">2.10(B)</td></tr></tbody></table></li></ol><ol type="1" id="3f32fc0c-d770-80d0-9b88-e830fc7c92c7" class="numbered-list" start="7" dir="auto"><li><strong> RB 판단</strong> : C 2.0 (f0/0 직접 연결) 매칭 → 최종 목적지 2.10(B)의 MAC을 모름<br/>실행 : ARP Request, Broadcast [2.10의 MAC addr을 찾습니다]<table id="3f32fc0c-d770-8037-9560-ec1a0addc348" class="simple-table" dir="ltr"><thead class="simple-table-header"><tr id="3f32fc0c-d770-805d-9032-da1cdebd56ec" dir="ltr"><th id="b`vt" class="simple-table-header-color simple-table-header">구간</th><th id="{i{&gt;" class="simple-table-header-color simple-table-header">Src MAC</th><th id="@~Ew" class="simple-table-header-color simple-table-header">Dst MAC</th><th id="`Ion" class="simple-table-header-color simple-table-header">Src IP</th><th id="sTFI" class="simple-table-header-color simple-table-header">Dst IP</th></tr></thead><tbody><tr id="3f32fc0c-d770-8041-a571-ca74a43fc48d" dir="ltr"><td id="b`vt" class="">RB→B</td><td id="{i{&gt;" class="">RB f0/0</td><td id="@~Ew" class="">FFFF.FFFF.FFFF</td><td id="`Ion" class="">2.1(RB f0/0)</td><td id="sTFI" class="">2.10(B)</td></tr></tbody></table></li></ol><ol type="1" id="3f32fc0c-d770-8039-8782-f0b76f675bcf" class="numbered-list" start="8" dir="auto"><li><strong> PC B 판단</strong> : 내가 2.10인가? → 맞음 (RB f0/0의 IP/MAC을 캐시에 저장)<br/>실행 : ARP Reply, Unicast [내가 2.10입니다]<table id="3f32fc0c-d770-80aa-81a0-f493cf6872e0" class="simple-table" dir="ltr"><thead class="simple-table-header"><tr id="3f32fc0c-d770-8012-b783-eb3ea2f685f2" dir="ltr"><th id=":kGP" class="simple-table-header-color simple-table-header">구간</th><th id="mhCB" class="simple-table-header-color simple-table-header">Src MAC</th><th id="zkft" class="simple-table-header-color simple-table-header">Dst MAC</th><th id="GjtL" class="simple-table-header-color simple-table-header">Src IP</th><th id="vaLi" class="simple-table-header-color simple-table-header">Dst IP</th></tr></thead><tbody><tr id="3f32fc0c-d770-8037-91fe-c01f4e7858ac" dir="ltr"><td id=":kGP" class="">B→RB</td><td id="mhCB" class="">B</td><td id="zkft" class="">RB f0/0</td><td id="GjtL" class="">2.10(B)</td><td id="vaLi" class="">2.1(RB f0/0)</td></tr></tbody></table></li></ol><ol type="1" id="3f32fc0c-d770-8070-b33b-d11b25325282" class="numbered-list" start="9" dir="auto"><li><strong> RB</strong> : B의 MAC을 알아냈다 → B로 ICMP 전달 (TTL 127→126)<br/>실행 : ICMP Echo Request<table id="3f32fc0c-d770-809b-a5b7-d5329d944cf9" class="simple-table" dir="ltr"><thead class="simple-table-header"><tr id="3f32fc0c-d770-8041-842f-d369cf0b0ed3" dir="ltr"><th id="_Rym" class="simple-table-header-color simple-table-header">구간</th><th id="YYCn" class="simple-table-header-color simple-table-header">Src MAC</th><th id="y?IG" class="simple-table-header-color simple-table-header">Dst MAC</th><th id="fYxE" class="simple-table-header-color simple-table-header">Src IP</th><th id="yCXW" class="simple-table-header-color simple-table-header">Dst IP</th></tr></thead><tbody><tr id="3f32fc0c-d770-80a8-aace-ce077e6dfedf" dir="ltr"><td id="_Rym" class="">RB→B</td><td id="YYCn" class="">RB f0/0</td><td id="y?IG" class="">B</td><td id="fYxE" class="">1.10(A)</td><td id="yCXW" class="">2.10(B)</td></tr></tbody></table></li></ol><ol type="1" id="3f32fc0c-d770-80da-8d38-e0cc25b3b717" class="numbered-list numbered-list-digits-2" start="10" dir="auto"><li><strong> PC B 판단</strong> : 1.10(A)이 같은 네트워크인가? → 아님 → Gateway(2.1)로 보내야 함 → 8단계에서 MAC을 이미 앎 (ARP 생략)<br/>실행 : ICMP Echo Reply<table id="3f32fc0c-d770-80b6-a711-fd8b3c094e22" class="simple-table" dir="ltr"><thead class="simple-table-header"><tr id="3f32fc0c-d770-8046-a4d6-ff33e7a8594f" dir="ltr"><th id="Lhvb" class="simple-table-header-color simple-table-header">구간</th><th id="K~~&gt;" class="simple-table-header-color simple-table-header">Src MAC</th><th id="m;n;" class="simple-table-header-color simple-table-header">Dst MAC</th><th id="o^GO" class="simple-table-header-color simple-table-header">Src IP</th><th id="`cwm" class="simple-table-header-color simple-table-header">Dst IP</th></tr></thead><tbody><tr id="3f32fc0c-d770-802a-ac1a-f66f6fa1968c" dir="ltr"><td id="Lhvb" class="">B→RB</td><td id="K~~&gt;" class="">B</td><td id="m;n;" class="">RB f0/0</td><td id="o^GO" class="">2.10(B)</td><td id="`cwm" class="">1.10(A)</td></tr></tbody></table></li></ol><ol type="1" id="3f32fc0c-d770-80f9-acdd-d9e929e21d80" class="numbered-list numbered-list-digits-2" start="11" dir="auto"><li><strong> RB 판단</strong> : S 1.0 via 12.1 매칭 → 12.1(RA f0/1)의 MAC은 5단계에서 이미 앎 (ARP 생략)<br/>실행 : ICMP Echo Reply 전달<table id="3f32fc0c-d770-80cb-8ab2-cf194d69c0e7" class="simple-table" dir="ltr"><thead class="simple-table-header"><tr id="3f32fc0c-d770-803d-8433-fbaca29f5666" dir="ltr"><th id="[oR}" class="simple-table-header-color simple-table-header">구간</th><th id="Q]r\" class="simple-table-header-color simple-table-header">Src MAC</th><th id="\lyj" class="simple-table-header-color simple-table-header">Dst MAC</th><th id="@Bde" class="simple-table-header-color simple-table-header">Src IP</th><th id="onxQ" class="simple-table-header-color simple-table-header">Dst IP</th></tr></thead><tbody><tr id="3f32fc0c-d770-8040-b811-d7b28f3bf3ee" dir="ltr"><td id="[oR}" class="">RB→RA</td><td id="Q]r\" class="">RB f0/1</td><td id="\lyj" class="">RA f0/1</td><td id="@Bde" class="">2.10(B)</td><td id="onxQ" class="">1.10(A)</td></tr></tbody></table></li></ol><ol type="1" id="3f32fc0c-d770-8062-842c-cba0303962e7" class="numbered-list numbered-list-digits-2" start="12" dir="auto"><li><strong> RA 판단</strong> : C 1.0 (f0/0 직접 연결) 매칭 → 1.10(A)의 MAC은 2단계에서 이미 앎 (ARP 생략)<br/>실행 : ICMP Echo Reply 전달 → A 도착 (TTL=126)<table id="3f32fc0c-d770-80a0-8726-e324b0d37bf7" class="simple-table" dir="ltr"><thead class="simple-table-header"><tr id="3f32fc0c-d770-8055-90c7-f5389d9a496c" dir="ltr"><th id="xa`h" class="simple-table-header-color simple-table-header">구간</th><th id="vz:D" class="simple-table-header-color simple-table-header">Src MAC</th><th id="BWJT" class="simple-table-header-color simple-table-header">Dst MAC</th><th id="VU|B" class="simple-table-header-color simple-table-header">Src IP</th><th id="DMJS" class="simple-table-header-color simple-table-header">Dst IP</th></tr></thead><tbody><tr id="3f32fc0c-d770-806a-beca-f1ce43f556ce" dir="ltr"><td id="xa`h" class="">RA→A</td><td id="vz:D" class="">RA f0/0</td><td id="BWJT" class="">A</td><td id="VU|B" class="">2.10(B)</td><td id="DMJS" class="">1.10(A)</td></tr></tbody></table></li></ol><p id="3f32fc0c-d770-8053-b415-c7153a201404" class="" dir="auto">
+</p><hr id="3f32fc0c-d770-803a-8062-d99bfa3a3ffc" dir="auto"/><p id="3f32fc0c-d770-802b-9060-daf8f0736b63" class="" dir="auto">Static Network</p><p id="3f32fc0c-d770-8002-9e7b-dec5e47d98eb" class="" dir="auto">먼저 default route설정 지우고 static으로 변경</p><pre id="3f32fc0c-d770-80d2-87a3-c54529fb282e" class="code code-wrap"><code style="white-space:pre-wrap;word-break:break-all">RA(config)#no ip route 192.168.2.0 255.255.255.0 192.168.12.2</code></pre><figure id="3f32fc0c-d770-8045-9f04-d6122b030384" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2016.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2016.png"><img style="width:619.9375px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2016.png"/></a></figure><pre id="3f32fc0c-d770-80e2-88d2-cd18cab4cc83" class="code code-wrap"><code style="white-space:pre-wrap;word-break:break-all">RB(config)#no ip route 192.168.1.0 255.255.255.0 192.168.12.1 </code></pre><figure id="3f32fc0c-d770-808a-a378-ee0e8fc3fc99" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2017.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2017.png"><img style="width:622.984375px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2017.png"/></a></figure><hr id="3f32fc0c-d770-8094-a446-c8ba105638f4" dir="auto"/></div></article>

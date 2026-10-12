@@ -1,0 +1,329 @@
+<style>
+article.page {max-width: 900px; margin: 0 auto; color: rgb(55, 53, 47); line-height: 1.5; white-space: pre-wrap; text-align: left;}
+article.page {-webkit-print-color-adjust: exact;}
+article.page, article.page * {box-sizing: border-box;
+	-webkit-print-color-adjust: exact;}
+article.page, article.page {margin: 0;
+	padding: 0;}
+article.page {margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);}
+article.page {line-height: 1.5;
+	white-space: pre-wrap;}
+article.page a, article.page a.visited {color: inherit;
+	text-decoration: underline;}
+article.page h1, article.page h2, article.page h3 {letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;}
+article.page h1 strong, article.page h2 strong, article.page h3 strong {font-weight: 600;}
+article.page .page-title {font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;}
+article.page h1 {font-size: 1.875rem;
+	margin-top: 1.875rem;}
+article.page h2 {font-size: 1.5rem;
+	margin-top: 1.5rem;}
+article.page h3 {font-size: 1.25rem;
+	margin-top: 1.25rem;}
+article.page .source {border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;}
+article.page .callout {border-radius: 10px;
+	padding: 1rem;
+	
+	-webkit-box-decoration-break: clone;
+	box-decoration-break: clone;}
+article.page .callout.block-color-default_background {border: 1px solid rgba(55, 53, 47, 0.09);}
+article.page figure {margin: 1.25em 0;
+	page-break-inside: avoid;}
+article.page details, article.page aside {margin: 1.25em 0;}
+article.page summary {page-break-after: avoid;
+	break-after: avoid;}
+article.page summary h1, article.page summary h2, article.page summary h3, article.page summary h4 {margin-top: 0;}
+article.page figcaption {opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;}
+article.page mark {background-color: transparent;}
+article.page .indented {padding-left: 1.5em;}
+article.page hr {background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);}
+article.page img {max-width: 100%;}
+article.page .collection-content-wrapper {overflow-x: auto;}
+article.page .collection-content {font-size: 0.875rem;}
+article.page .collection-content td {white-space: pre-wrap;
+	word-break: break-word;}
+article.page .column-list {display: flex;
+	gap: 46px;}
+article.page .column {min-width: 0;
+	overflow: hidden;}
+article.page .column > *:first-child {margin-top: 0;}
+article.page .table_of_contents-item {display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding-inline: 0.125rem;
+	padding-block: 0.375rem;}
+article.page .table_of_contents-indent-1 {margin-left: 1.5rem;}
+article.page .table_of_contents-indent-2 {margin-left: 3rem;}
+article.page .table_of_contents-indent-3 {margin-left: 4.5rem;}
+article.page .table_of_contents-link {text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);}
+article.page table, article.page th, article.page td {border: 1px solid rgba(55, 53, 47, 0.09);}
+article.page table {border-collapse: collapse;
+	border-left: none;
+	border-right: none;}
+article.page th, article.page td {font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;}
+article.page th {color: rgba(55, 53, 47, 0.6);}
+article.page ol, article.page ul {margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;}
+article.page li > ol:first-child, article.page li > ul:first-child {margin-block-start: 0.6em;}
+article.page ul > li {list-style: disc;}
+article.page ul.to-do-list {padding-inline-start: 0;}
+article.page ul.to-do-list > li {list-style: none;}
+article.page .to-do-children-checked {text-decoration: line-through;
+	opacity: 0.375;}
+article.page ul.toggle > li {list-style: none;}
+article.page ul {padding-inline-start: 1.7em;}
+article.page ul > li {padding-left: 0.1em;}
+article.page ol {padding-inline-start: 1.6em;}
+article.page ol.numbered-list.numbered-list-digits-2 {padding-inline-start: 2em;}
+article.page ol.numbered-list.numbered-list-digits-3plus {padding-inline-start: 2.4em;}
+article.page ol > li {padding-left: 0.2em;}
+article.page .mono ol {padding-inline-start: 2em;}
+article.page .mono ol > li {text-indent: -0.4em;}
+article.page .toggle {padding-inline-start: 0em;
+	list-style-type: none;}
+article.page .toggle > li > details {padding-left: 1.7em;}
+article.page .toggle > li > details > summary {margin-left: -1.1em;}
+article.page .selected-value {display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;}
+article.page .collection-title {display: inline-block;
+	margin-right: 1em;}
+article.page .page-description {margin-bottom: 2em;}
+article.page .simple-table {margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;}
+article.page .simple-table td {height: 29px;
+	min-width: 120px;}
+article.page .simple-table th {height: 29px;
+	min-width: 120px;}
+article.page .simple-table-header-color {background: rgb(247, 246, 243);
+	color: black;}
+article.page .simple-table-header {font-weight: 500;}
+article.page time {opacity: 0.5;}
+article.page .icon {display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;}
+article.page .icon[data-emoji]::before {content: attr(data-emoji);}
+article.page img.icon {border-radius: 3px;}
+article.page .callout img.notion-static-icon {width: 1em;
+	height: 1em;}
+article.page .callout p {margin: 0;}
+article.page .callout h1, article.page .callout h2, article.page .callout h3 {margin: 0 0 0.6rem;}
+article.page .user-icon {width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;}
+article.page .user-icon-inner {font-size: 0.8em;}
+article.page .text-icon {border: 1px solid #000;
+	text-align: center;}
+article.page .page-cover-image {display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;}
+article.page .page-header-icon {font-size: 3rem;
+	margin-bottom: 1rem;}
+article.page .page-header-icon-with-cover {margin-top: -0.72em;
+	margin-left: 0.07em;}
+article.page .page-header-icon img {border-radius: 3px;}
+article.page .link-to-page {margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;}
+article.page p > .user {opacity: 0.5;}
+article.page td > .user, article.page td > time {white-space: nowrap;}
+article.page input[type="checkbox"] {margin-right: 0.4em;
+	vertical-align: middle;}
+article.page p {margin-top: 0.5em;
+	margin-bottom: 0.5em;}
+article.page .image {border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;}
+article.page .code, article.page code {background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;}
+article.page code {color: #eb5757;}
+article.page .code {padding: 1.5em 1em;}
+article.page .code-wrap {white-space: pre-wrap;
+	word-break: break-all;}
+article.page .code > code {background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;}
+article.page blockquote {font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);}
+article.page blockquote.quote-large {font-size: 1.25em;}
+article.page .bookmark {text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;}
+article.page .bookmark-title {font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;}
+article.page .bookmark-text {display: flex;
+	flex-direction: column;}
+article.page .bookmark-info {flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;}
+article.page .bookmark-image {width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;}
+article.page .bookmark-description {color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;}
+article.page .bookmark-href {font-size: 0.75em;
+	margin-top: 0.25em;}
+article.page .tab {margin: 1.25em 0;
+	padding-inline: 1rem;
+	border: 1px solid rgba(55, 53, 47, 0.09);}
+article.page.sans, article.page .sans {font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";}
+article.page .code {font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace;}
+article.page.serif, article.page .serif {font-family: Lyon-Text, Georgia, ui-serif, serif;}
+article.page.mono, article.page .mono {font-family: iawriter-mono, Nitti, Menlo, Courier, monospace;}
+article.page .highlight-default {color: rgba(44, 44, 43, 1);}
+article.page .highlight-gray {color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);}
+article.page .highlight-brown {color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);}
+article.page .highlight-orange {color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);}
+article.page .highlight-yellow {color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);}
+article.page .highlight-teal {color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);}
+article.page .highlight-blue {color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);}
+article.page .highlight-purple {color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);}
+article.page .highlight-pink {color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);}
+article.page .highlight-red {color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);}
+article.page .highlight-default_background {color: rgba(44, 44, 43, 1);}
+article.page .highlight-gray_background {background: rgba(42, 28, 0, 0.07);}
+article.page .highlight-brown_background {background: rgba(139, 46, 0, 0.086);}
+article.page .highlight-orange_background {background: rgba(224, 101, 1, 0.129);}
+article.page .highlight-yellow_background {background: rgba(211, 168, 0, 0.137);}
+article.page .highlight-teal_background {background: rgba(0, 100, 45, 0.09);}
+article.page .highlight-blue_background {background: rgba(0, 124, 215, 0.094);}
+article.page .highlight-purple_background {background: rgba(102, 0, 178, 0.078);}
+article.page .highlight-pink_background {background: rgba(197, 0, 93, 0.086);}
+article.page .highlight-red_background {background: rgba(223, 22, 0, 0.094);}
+article.page .block-color-default {color: inherit;
+	fill: inherit;}
+article.page .block-color-gray {color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);}
+article.page .block-color-brown {color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);}
+article.page .block-color-orange {color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);}
+article.page .block-color-yellow {color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);}
+article.page .block-color-teal {color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);}
+article.page .block-color-blue {color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);}
+article.page .block-color-purple {color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);}
+article.page .block-color-pink {color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);}
+article.page .block-color-red {color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);}
+article.page .block-color-default_background {color: inherit;
+	fill: inherit;}
+article.page .block-color-gray_background {background: rgba(240, 239, 237, 1);}
+article.page .block-color-brown_background {background: rgba(245, 237, 233, 1);}
+article.page .block-color-orange_background {background: rgba(251, 235, 222, 1);}
+article.page .block-color-yellow_background {background: rgba(249, 243, 220, 1);}
+article.page .block-color-teal_background {background: rgba(232, 241, 236, 1);}
+article.page .block-color-blue_background {background: rgba(229, 242, 252, 1);}
+article.page .block-color-purple_background {background: rgba(243, 235, 249, 1);}
+article.page .block-color-pink_background {background: rgba(250, 233, 241, 1);}
+article.page .block-color-red_background {background: rgba(252, 233, 231, 1);}
+article.page .select-value-color-default {background-color: rgba(42, 28, 0, 0.07);}
+article.page .select-value-color-gray {background-color: rgba(28, 19, 1, 0.11);}
+article.page .select-value-color-brown {background-color: rgba(127, 51, 0, 0.156);}
+article.page .select-value-color-orange {background-color: rgba(196, 88, 0, 0.203);}
+article.page .select-value-color-yellow {background-color: rgba(209, 156, 0, 0.282);}
+article.page .select-value-color-green {background-color: rgba(0, 96, 38, 0.156);}
+article.page .select-value-color-blue {background-color: rgba(0, 118, 217, 0.203);}
+article.page .select-value-color-purple {background-color: rgba(92, 0, 163, 0.141);}
+article.page .select-value-color-pink {background-color: rgba(183, 0, 78, 0.152);}
+article.page .select-value-color-red {background-color: rgba(206, 24, 0, 0.164);}
+article.page .checkbox {display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;}
+article.page .checkbox-on {background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");}
+article.page .checkbox-off {background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");}
+/* toggle-extras */
+article.page details {border-top: 3px solid rgb(55, 53, 47); border-bottom: 3px solid rgb(55, 53, 47); padding: 0.6em 0; margin: 1.5em 0;}
+article.page details details {border-width: 2px; border-color: rgba(55, 53, 47, 0.45);}
+article.page details > summary {cursor: pointer;}
+article.page details > summary::after {content: "열기"; margin-left: 0.6em; padding: 0.1em 0.5em; font-size: 0.75em; font-weight: 500; font-style: normal; color: rgb(120, 119, 116); background: rgba(135, 131, 120, 0.15); border-radius: 4px; vertical-align: 0.1em;}
+article.page details[open] > summary::after {content: "닫기";}
+</style><article id="3f32fc0c-d770-8084-ab34-d3c9464eac58" class="page sans"><header><h1 class="page-title" dir="auto">3일차 10/08</h1><p class="page-description" dir="auto"></p></header><div class="page-body"><h2 id="3f32fc0c-d770-80c2-8597-e7d8238e4835" class="" dir="auto">Routing Protocol의 분류</h2><figure id="3f32fc0c-d770-8069-840a-da07237bf0a6" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2018.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2018.png"><img style="width:703.96875px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2018.png"/></a></figure><figure id="3f32fc0c-d770-8029-b307-e73d9fd78d03" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2019.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2019.png"><img style="width:703.96875px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2019.png"/></a></figure><p id="3f32fc0c-d770-808d-8a3d-d7a0516353ba" class="" dir="auto">Distance Vector / Link-state</p><figure id="3f32fc0c-d770-8090-aa1f-cc339129cde1" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2020.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2020.png"><img style="width:703.984375px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2020.png"/></a></figure><p id="3f32fc0c-d770-8047-8640-e8ea1960900d" class="" dir="auto">Distance Vector (loop방지 기술6개) : basic : <code>RIP</code>, 하지만 그래도 루프발생함</p><p id="3f32fc0c-d770-800c-9536-e23d87e4ebb3" class="" dir="auto">Advanced Distance Vector : <code>BGP</code>의 기본 알고리즘(=Distance Vecotr) + 자기만의 Loop방지책 추가</p><p id="3f32fc0c-d770-8017-9264-c4d0406603c0" class="" dir="auto">Link-State : <code>OSPF</code>(가장많이 사용되는 Routing Protocol) : 안정적 절대 loop발생 x → 중대형망 사용가능 → 큰 메모리, 경로계산cpu필요 → 리소스가 많이 요구된다.</p><p id="3f32fc0c-d770-80bc-82e4-f9e2f4c1f124" class="" dir="auto">가상화, 클라우드에서 Routing Protocol → BGP가 기본</p><figure id="3f32fc0c-d770-8001-8f2a-ea75c7b76fef" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2021.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2021.png"><img style="width:703.96875px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2021.png"/></a></figure><figure id="3f32fc0c-d770-80ee-941b-e9f71ea1d628" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2022.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2022.png"><img style="width:703.984375px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2022.png"/></a></figure><figure id="3f32fc0c-d770-80fc-9ff7-e2ea102c171f" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2023.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2023.png"><img style="width:703.984375px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2023.png"/></a></figure><p id="3f32fc0c-d770-8000-862b-fb016af6bf7a" class="" dir="auto">
+</p><p id="3f32fc0c-d770-8033-a5b2-f8cbff414cc4" class="" dir="auto">동시에 프로토콜 두개가 돌아갈 수 있음</p><figure id="3f32fc0c-d770-80a3-b6c3-d9710b6ac7b0" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2024.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2024.png"><img style="width:703.984375px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2024.png"/></a></figure><p id="3f32fc0c-d770-80fa-a62c-fcf778324b02" class="" dir="auto">왜 차이가 나냐?<br/>→ 라우팅 프로코톨마다 목적지까지 계산하는 기준이 다름</p><hr id="3f32fc0c-d770-80f3-a519-f0a3576e7563" dir="auto"/><h2 id="3f32fc0c-d770-8067-bbf3-f48bb7920272" class="" dir="auto">Router RIP실습</h2><p id="3f32fc0c-d770-8044-a026-e2f576cbb1a6" class="" dir="auto">먼저 default route설정 지우고</p><pre id="3f32fc0c-d770-8093-a7b9-edb2916684af" class="code code-wrap"><code style="white-space:pre-wrap;word-break:break-all">RA(config)#no ip route 192.168.2.0 255.255.255.0 192.168.12.2</code></pre><figure id="3f32fc0c-d770-80bf-959e-c58dedd51a88" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2016.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2016.png"><img style="width:619.9375px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2016.png"/></a></figure><pre id="3f32fc0c-d770-80e0-96b4-c489a4d8ab6b" class="code code-wrap"><code style="white-space:pre-wrap;word-break:break-all">RA(config)#router rip
+RA(config-router)#network 192.168.1.0
+RA(config-router)#network 192.168.12.0
+RA(config-router)#do sh ip prot</code></pre><figure id="3f32fc0c-d770-807c-8d5d-fc4f85db2ab5" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2025.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2025.png"><img style="width:625.984375px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2025.png"/></a></figure><pre id="3f32fc0c-d770-8077-8549-c51ded6e778a" class="code code-wrap"><code style="white-space:pre-wrap;word-break:break-all">RB(config)#no ip route 192.168.1.0 255.255.255.0 192.168.12.1 </code></pre><figure id="3f32fc0c-d770-8028-b64a-f345d5ff080b" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2017.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2017.png"><img style="width:622.984375px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2017.png"/></a></figure><pre id="3f32fc0c-d770-807d-9cb1-ca44fb697227" class="code code-wrap"><code style="white-space:pre-wrap;word-break:break-all">RA(config)#router rip
+RA(config-router)#network 192.168.1.0
+RA(config-router)#network 192.168.12.0
+RA(config-router)#do sh ip prot</code></pre><figure id="3f32fc0c-d770-80ae-9252-c0a3594a34df" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2026.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2026.png"><img style="width:628.96875px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2026.png"/></a></figure><p id="3f32fc0c-d770-8039-8601-d04d54905044" class="" dir="auto">PC A→B ping</p><figure id="3f32fc0c-d770-804c-a42e-f12af26d24f7" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2027.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2027.png"><img style="width:609.953125px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2027.png"/></a></figure><hr id="3f32fc0c-d770-8039-962b-e477364a6a9f" dir="auto"/><figure id="3f32fc0c-d770-8073-8f26-ecdc2ca33156" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2028.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2028.png"><img style="width:568.96875px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2028.png"/></a></figure><p id="3f32fc0c-d770-8053-94ae-da8a1ff73c2b" class="" dir="auto">VLAN설정 → 서로통신 X</p><p id="3f32fc0c-d770-80aa-8e0e-e4101513e3f2" class="" dir="auto">하나의 VLAN 하나의 네트워크</p><aside class="block-color-gray_background callout" data-notion-callout="" data-notion-callout-icon="⭐" data-notion-callout-background="gray_background" style="white-space:pre-wrap;display:flex" id="3f32fc0c-d770-80c8-b415-fe9043e80a51" dir="ltr"><div style="font-size:1.5em"><span class="icon" data-emoji="⭐"></span></div><div style="width:100%"><p id="3f32fc0c-d770-804b-a3a3-f0ebcd4e4a61" class="" dir="auto">각각의 VLAN은 각각의 Network 정보를 갖는다.</p></div></aside><p id="3f32fc0c-d770-80be-884b-c536fb6e2875" class="" dir="auto">라우터필요, Default Gateway설정 필요</p><figure id="3f32fc0c-d770-802e-bd22-ca81a5e1c37f" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2029.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2029.png"><img style="width:520.96875px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2029.png"/></a></figure><h2 id="3f32fc0c-d770-80d2-bff2-f70af199e4e6" class="" dir="auto">Inter VLAN Routing : 서로 다른 VLAN간 라우팅이용 통신</h2><p id="3f32fc0c-d770-803a-b2fb-ff38cb22bb74" class="" dir="auto">방식 1<div class="indented"><p id="3f32fc0c-d770-808a-adb8-f80d8ad4ff89" class="" dir="auto">VLAN마다 케이블 연결</p><figure id="3f32fc0c-d770-804f-a248-c1cef8fd913b" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2030.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2030.png"><img style="width:470.953125px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2030.png"/></a></figure><p id="3f32fc0c-d770-803b-abde-c52af7000774" class="" dir="auto">이 문제 해결을 위해 Trunk가 나옴</p><figure id="3f32fc0c-d770-80a0-8bad-c406cc7082cc" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2031.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2031.png"><img style="width:437.984375px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2031.png"/></a></figure></div></p><p id="3f32fc0c-d770-8083-9123-eca2162e5bda" class="" dir="auto">방식 2<div class="indented"><p id="3f32fc0c-d770-80fc-bb75-f77c311bb708" class="" dir="auto">Trunk링크<br/>Router on a stick방식</p><div id="3f32fc0c-d770-80bb-b127-d615b0d87699" class="column-list" data-notion-column-list="" dir="auto"><div id="3f32fc0c-d770-80ec-9fe2-d2e134a98e17" style="width:50%" class="column" data-notion-column-ratio="0.5" dir="auto"><figure id="3f32fc0c-d770-8055-8df3-fba47487fd56" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2032.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2032.png"><img style="width:277.984375px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2032.png"/></a></figure></div><div id="3f32fc0c-d770-80b8-8c19-cf2e6c9c40f4" style="width:50%" class="column" data-notion-column-ratio="0.5" dir="auto"><figure id="3f32fc0c-d770-80b4-9ee2-d0ab5666a8f3" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2033.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2033.png"><img style="width:345.984375px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2033.png"/></a></figure><p id="3f32fc0c-d770-80af-8b2d-ebff452afc12" class="" dir="auto">
+</p></div></div></div></p><p id="3f32fc0c-d770-80da-aafe-c6dea758b075" class="" dir="auto">방식 3<div class="indented"><p id="3f32fc0c-d770-8008-ab64-fdd121576588" class="" dir="auto">North-South Routing만 떼와서 재구성</p><figure id="3f32fc0c-d770-8029-8546-c4a2fc613f76" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2034.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2034.png"><img style="width:415.96875px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2034.png"/></a></figure></div></p><p id="3f32fc0c-d770-80fd-a8cf-c3da2ee5279f" class="" dir="auto">L3 Switch</p><figure id="3f32fc0c-d770-80a0-bf9c-f7c246cb363f" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2035.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2035.png"><img style="width:528px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2035.png"/></a></figure><hr id="3f32fc0c-d770-8027-82a9-f6d8343d94e2" dir="auto"/><p id="3f32fc0c-d770-8079-8f31-c423f846ebeb" class="" dir="auto">
+</p><figure id="3f32fc0c-d770-803a-bca3-ed795ea1aeb0" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2036.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2036.png"><img style="width:388.984375px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2036.png"/></a></figure><figure id="3f32fc0c-d770-80cc-818e-f939a41b3982" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2037.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2037.png"><img style="width:631.96875px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2037.png"/></a></figure><figure id="3f32fc0c-d770-8061-a31a-d22547fd8b3a" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2038.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2038.png"><img style="width:627.953125px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2038.png"/></a></figure><figure id="3f32fc0c-d770-8089-a7f8-d0ed40d613b7" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2039.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2039.png"><img style="width:627.96875px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2039.png"/></a></figure><p id="3f32fc0c-d770-8078-9e5c-fa979e3c69be" class="" dir="auto">vlan 1 생성</p><figure id="3f32fc0c-d770-804a-9ca7-e6c001cd36ca" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2040.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2040.png"><img style="width:636.921875px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2040.png"/></a></figure><p id="3f32fc0c-d770-80e9-a178-fbbb758bbf72" class="" dir="auto">vlan 2 생성</p><figure id="3f32fc0c-d770-8018-9bbe-c915914e536a" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2041.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2041.png"><img style="width:628.984375px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2041.png"/></a></figure><p id="3f32fc0c-d770-809c-a66f-fb33611f9e44" class="" dir="auto">routing table 생성 확인</p><figure id="3f32fc0c-d770-80c5-acd3-e4e5a9f4c3eb" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2042.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2042.png"><img style="width:629.9375px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2042.png"/></a></figure><p id="3f32fc0c-d770-8032-b03c-e5e40c258a1d" class="" dir="auto">PC A→B ping</p><figure id="3f32fc0c-d770-8002-af58-d584e43891b0" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2043.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2043.png"><img style="width:604.9375px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day3/img/image%2043.png"/></a><figcaption>첫번째 time out은 arp 캐시 사라져서 arp 관련 처리해야해서 첫연결이 늦음</figcaption></figure><hr id="3f32fc0c-d770-809a-82a6-cd09a23b07ba" dir="auto"/></div></article>
