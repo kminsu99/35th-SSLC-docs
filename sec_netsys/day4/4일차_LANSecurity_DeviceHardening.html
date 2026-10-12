@@ -1,0 +1,351 @@
+<style>
+article.page {max-width: 900px; margin: 0 auto; color: rgb(55, 53, 47); line-height: 1.5; white-space: pre-wrap; text-align: left;}
+article.page {-webkit-print-color-adjust: exact;}
+article.page, article.page * {box-sizing: border-box;
+	-webkit-print-color-adjust: exact;}
+article.page, article.page {margin: 0;
+	padding: 0;}
+article.page {margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);}
+article.page {line-height: 1.5;
+	white-space: pre-wrap;}
+article.page a, article.page a.visited {color: inherit;
+	text-decoration: underline;}
+article.page h1, article.page h2, article.page h3 {letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;}
+article.page h1 strong, article.page h2 strong, article.page h3 strong {font-weight: 600;}
+article.page .page-title {font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;}
+article.page h1 {font-size: 1.875rem;
+	margin-top: 1.875rem;}
+article.page h2 {font-size: 1.5rem;
+	margin-top: 1.5rem;}
+article.page h3 {font-size: 1.25rem;
+	margin-top: 1.25rem;}
+article.page .source {border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;}
+article.page .callout {border-radius: 10px;
+	padding: 1rem;
+	
+	-webkit-box-decoration-break: clone;
+	box-decoration-break: clone;}
+article.page .callout.block-color-default_background {border: 1px solid rgba(55, 53, 47, 0.09);}
+article.page figure {margin: 1.25em 0;
+	page-break-inside: avoid;}
+article.page details, article.page aside {margin: 1.25em 0;}
+article.page summary {page-break-after: avoid;
+	break-after: avoid;}
+article.page summary h1, article.page summary h2, article.page summary h3, article.page summary h4 {margin-top: 0;}
+article.page figcaption {opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;}
+article.page mark {background-color: transparent;}
+article.page .indented {padding-left: 1.5em;}
+article.page hr {background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);}
+article.page img {max-width: 100%;}
+article.page .collection-content-wrapper {overflow-x: auto;}
+article.page .collection-content {font-size: 0.875rem;}
+article.page .collection-content td {white-space: pre-wrap;
+	word-break: break-word;}
+article.page .column-list {display: flex;
+	gap: 46px;}
+article.page .column {min-width: 0;
+	overflow: hidden;}
+article.page .column > *:first-child {margin-top: 0;}
+article.page .table_of_contents-item {display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding-inline: 0.125rem;
+	padding-block: 0.375rem;}
+article.page .table_of_contents-indent-1 {margin-left: 1.5rem;}
+article.page .table_of_contents-indent-2 {margin-left: 3rem;}
+article.page .table_of_contents-indent-3 {margin-left: 4.5rem;}
+article.page .table_of_contents-link {text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);}
+article.page table, article.page th, article.page td {border: 1px solid rgba(55, 53, 47, 0.09);}
+article.page table {border-collapse: collapse;
+	border-left: none;
+	border-right: none;}
+article.page th, article.page td {font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;}
+article.page th {color: rgba(55, 53, 47, 0.6);}
+article.page ol, article.page ul {margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;}
+article.page li > ol:first-child, article.page li > ul:first-child {margin-block-start: 0.6em;}
+article.page ul > li {list-style: disc;}
+article.page ul.to-do-list {padding-inline-start: 0;}
+article.page ul.to-do-list > li {list-style: none;}
+article.page .to-do-children-checked {text-decoration: line-through;
+	opacity: 0.375;}
+article.page ul.toggle > li {list-style: none;}
+article.page ul {padding-inline-start: 1.7em;}
+article.page ul > li {padding-left: 0.1em;}
+article.page ol {padding-inline-start: 1.6em;}
+article.page ol.numbered-list.numbered-list-digits-2 {padding-inline-start: 2em;}
+article.page ol.numbered-list.numbered-list-digits-3plus {padding-inline-start: 2.4em;}
+article.page ol > li {padding-left: 0.2em;}
+article.page .mono ol {padding-inline-start: 2em;}
+article.page .mono ol > li {text-indent: -0.4em;}
+article.page .toggle {padding-inline-start: 0em;
+	list-style-type: none;}
+article.page .toggle > li > details {padding-left: 1.7em;}
+article.page .toggle > li > details > summary {margin-left: -1.1em;}
+article.page .selected-value {display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;}
+article.page .collection-title {display: inline-block;
+	margin-right: 1em;}
+article.page .page-description {margin-bottom: 2em;}
+article.page .simple-table {margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;}
+article.page .simple-table td {height: 29px;
+	min-width: 120px;}
+article.page .simple-table th {height: 29px;
+	min-width: 120px;}
+article.page .simple-table-header-color {background: rgb(247, 246, 243);
+	color: black;}
+article.page .simple-table-header {font-weight: 500;}
+article.page time {opacity: 0.5;}
+article.page .icon {display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;}
+article.page .icon[data-emoji]::before {content: attr(data-emoji);}
+article.page img.icon {border-radius: 3px;}
+article.page .callout img.notion-static-icon {width: 1em;
+	height: 1em;}
+article.page .callout p {margin: 0;}
+article.page .callout h1, article.page .callout h2, article.page .callout h3 {margin: 0 0 0.6rem;}
+article.page .user-icon {width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;}
+article.page .user-icon-inner {font-size: 0.8em;}
+article.page .text-icon {border: 1px solid #000;
+	text-align: center;}
+article.page .page-cover-image {display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;}
+article.page .page-header-icon {font-size: 3rem;
+	margin-bottom: 1rem;}
+article.page .page-header-icon-with-cover {margin-top: -0.72em;
+	margin-left: 0.07em;}
+article.page .page-header-icon img {border-radius: 3px;}
+article.page .link-to-page {margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;}
+article.page p > .user {opacity: 0.5;}
+article.page td > .user, article.page td > time {white-space: nowrap;}
+article.page input[type="checkbox"] {margin-right: 0.4em;
+	vertical-align: middle;}
+article.page p {margin-top: 0.5em;
+	margin-bottom: 0.5em;}
+article.page .image {border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;}
+article.page .code, article.page code {background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;}
+article.page code {color: #eb5757;}
+article.page .code {padding: 1.5em 1em;}
+article.page .code-wrap {white-space: pre-wrap;
+	word-break: break-all;}
+article.page .code > code {background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;}
+article.page blockquote {font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);}
+article.page blockquote.quote-large {font-size: 1.25em;}
+article.page .bookmark {text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;}
+article.page .bookmark-title {font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;}
+article.page .bookmark-text {display: flex;
+	flex-direction: column;}
+article.page .bookmark-info {flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;}
+article.page .bookmark-image {width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;}
+article.page .bookmark-description {color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;}
+article.page .bookmark-href {font-size: 0.75em;
+	margin-top: 0.25em;}
+article.page .tab {margin: 1.25em 0;
+	padding-inline: 1rem;
+	border: 1px solid rgba(55, 53, 47, 0.09);}
+article.page.sans, article.page .sans {font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";}
+article.page .code {font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace;}
+article.page.serif, article.page .serif {font-family: Lyon-Text, Georgia, ui-serif, serif;}
+article.page.mono, article.page .mono {font-family: iawriter-mono, Nitti, Menlo, Courier, monospace;}
+article.page .highlight-default {color: rgba(44, 44, 43, 1);}
+article.page .highlight-gray {color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);}
+article.page .highlight-brown {color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);}
+article.page .highlight-orange {color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);}
+article.page .highlight-yellow {color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);}
+article.page .highlight-teal {color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);}
+article.page .highlight-blue {color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);}
+article.page .highlight-purple {color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);}
+article.page .highlight-pink {color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);}
+article.page .highlight-red {color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);}
+article.page .highlight-default_background {color: rgba(44, 44, 43, 1);}
+article.page .highlight-gray_background {background: rgba(42, 28, 0, 0.07);}
+article.page .highlight-brown_background {background: rgba(139, 46, 0, 0.086);}
+article.page .highlight-orange_background {background: rgba(224, 101, 1, 0.129);}
+article.page .highlight-yellow_background {background: rgba(211, 168, 0, 0.137);}
+article.page .highlight-teal_background {background: rgba(0, 100, 45, 0.09);}
+article.page .highlight-blue_background {background: rgba(0, 124, 215, 0.094);}
+article.page .highlight-purple_background {background: rgba(102, 0, 178, 0.078);}
+article.page .highlight-pink_background {background: rgba(197, 0, 93, 0.086);}
+article.page .highlight-red_background {background: rgba(223, 22, 0, 0.094);}
+article.page .block-color-default {color: inherit;
+	fill: inherit;}
+article.page .block-color-gray {color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);}
+article.page .block-color-brown {color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);}
+article.page .block-color-orange {color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);}
+article.page .block-color-yellow {color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);}
+article.page .block-color-teal {color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);}
+article.page .block-color-blue {color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);}
+article.page .block-color-purple {color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);}
+article.page .block-color-pink {color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);}
+article.page .block-color-red {color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);}
+article.page .block-color-default_background {color: inherit;
+	fill: inherit;}
+article.page .block-color-gray_background {background: rgba(240, 239, 237, 1);}
+article.page .block-color-brown_background {background: rgba(245, 237, 233, 1);}
+article.page .block-color-orange_background {background: rgba(251, 235, 222, 1);}
+article.page .block-color-yellow_background {background: rgba(249, 243, 220, 1);}
+article.page .block-color-teal_background {background: rgba(232, 241, 236, 1);}
+article.page .block-color-blue_background {background: rgba(229, 242, 252, 1);}
+article.page .block-color-purple_background {background: rgba(243, 235, 249, 1);}
+article.page .block-color-pink_background {background: rgba(250, 233, 241, 1);}
+article.page .block-color-red_background {background: rgba(252, 233, 231, 1);}
+article.page .select-value-color-default {background-color: rgba(42, 28, 0, 0.07);}
+article.page .select-value-color-gray {background-color: rgba(28, 19, 1, 0.11);}
+article.page .select-value-color-brown {background-color: rgba(127, 51, 0, 0.156);}
+article.page .select-value-color-orange {background-color: rgba(196, 88, 0, 0.203);}
+article.page .select-value-color-yellow {background-color: rgba(209, 156, 0, 0.282);}
+article.page .select-value-color-green {background-color: rgba(0, 96, 38, 0.156);}
+article.page .select-value-color-blue {background-color: rgba(0, 118, 217, 0.203);}
+article.page .select-value-color-purple {background-color: rgba(92, 0, 163, 0.141);}
+article.page .select-value-color-pink {background-color: rgba(183, 0, 78, 0.152);}
+article.page .select-value-color-red {background-color: rgba(206, 24, 0, 0.164);}
+article.page .checkbox {display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;}
+article.page .checkbox-on {background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");}
+article.page .checkbox-off {background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");}
+/* toggle-extras */
+article.page details {border-top: 3px solid rgb(55, 53, 47); border-bottom: 3px solid rgb(55, 53, 47); padding: 0.6em 0; margin: 1.5em 0;}
+article.page details details {border-width: 2px; border-color: rgba(55, 53, 47, 0.45);}
+article.page details > summary {cursor: pointer;}
+article.page details > summary::after {content: "열기"; margin-left: 0.6em; padding: 0.1em 0.5em; font-size: 0.75em; font-weight: 500; font-style: normal; color: rgb(120, 119, 116); background: rgba(135, 131, 120, 0.15); border-radius: 4px; vertical-align: 0.1em;}
+article.page details[open] > summary::after {content: "닫기";}
+/* list-fix */
+article.page ol, article.page ul {margin-top: 0.1em !important; margin-bottom: 0.1em !important;}
+article.page li {margin-top: 0 !important; margin-bottom: 0 !important;}
+article.page li > p {margin-top: 0 !important; margin-bottom: 0 !important;}
+article.page p:empty {display: none !important;}
+/* table-fix */
+article.page {max-width: 100% !important; overflow-x: hidden;}
+article.page table {display: block; max-width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch;}
+article.page .simple-table td, article.page .simple-table th {min-width: 0 !important; width: auto !important; word-break: keep-all;}
+article.page img {max-width: 100% !important; height: auto;}
+</style><article id="3f72fc0c-d770-8056-a9f3-e150e6c02643" class="page sans"><header><h1 class="page-title" dir="auto">4일차 10/12</h1><p class="page-description" dir="auto"></p></header><div class="page-body"><h1 id="3f72fc0c-d770-8087-9689-f2e69708eb25" class="" dir="auto">LAN Security와 Device Hardening</h1><hr id="3f72fc0c-d770-802b-851f-f3f25a620a88" dir="auto"/><h1 id="3f72fc0c-d770-8020-85f3-f2f77aaa21d1" class="" dir="auto">1.Access Control</h1><hr id="3f72fc0c-d770-80ed-ab89-df6d241b628a" dir="auto"/><h2 id="3f72fc0c-d770-8010-9997-c13b360e9469" class="" dir="auto">접근제어</h2><p id="3f72fc0c-d770-803a-be0d-d09bb4ff9148" class="" dir="auto">네트워크 장비에서 다양한 인증수행을 접근 제어</p><p id="3f72fc0c-d770-8087-a9e0-c81c6ea33f43" class="" dir="auto">로컬 인증, AAA, 802.1x등 사용</p><p id="3f72fc0c-d770-8036-9771-c3827564ab87" class="" dir="auto">인증 방식에 따라 다양한 수준의 보안 제공</p><hr id="3f72fc0c-d770-8094-ab15-fa36761e965d" dir="auto"/><h2 id="3f72fc0c-d770-809a-b914-ed7e8c238959" class="" dir="auto">로컬인증</h2><p id="3f72fc0c-d770-8056-ac70-f3f8e479b662" class="" dir="auto">가장 간단한 원격 액세스 인증 방법<div class="indented"><p id="3f72fc0c-d770-80d4-9d60-f9e1dc6e1e41" class="" dir="auto">Console(<code>Local</code>), vty line(<code>Remote</code>), <del>aux port</del>에서 로그인 및 암호 조합 구성</p><p id="3f72fc0c-d770-8098-aa3c-f0bdab806f45" class="" dir="auto">암호는 일반 text로 전송</p><p id="3f72fc0c-d770-8094-97e1-c52e6a7ce2b9" class="" dir="auto">암호를 가진 사람은 누구나 접근</p></div></p><p id="3f72fc0c-d770-8055-9334-f3ef68ae0ba1" class="" dir="auto">공유 암호 대신 로컬 username/password 쌍을 구성할 수 있음</p><details id="3f72fc0c-d770-8080-b235-c7e572195e0f" class="toggle" dir="auto"><summary>Router Login</summary><div class="indented"><p id="3f72fc0c-d770-8045-8da4-c0ce58f0a437" class="" dir="auto">Admin</p><figure id="3f72fc0c-d770-805d-9712-cbd32444c981" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day4/img/image%203.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day4/img/image%203.png"><img style="width:399.96875px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day4/img/image%203.png"/></a></figure><figure id="3f72fc0c-d770-8002-96ed-eb62b4bdd7ba" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day4/img/image%204.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day4/img/image%204.png"><img style="width:237.953125px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day4/img/image%204.png"/></a></figure><p id="3f72fc0c-d770-8098-8347-c8c799dc8f43" class="" dir="auto">User</p><figure id="3f72fc0c-d770-80b6-b423-c70904ddd580" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day4/img/image%205.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day4/img/image%205.png"><img style="width:480.984375px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day4/img/image%205.png"/></a></figure><figure id="3f72fc0c-d770-80d9-948c-d44f48a0486e" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day4/img/image%206.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day4/img/image%206.png"><img style="width:232.984375px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day4/img/image%206.png"/></a></figure><p id="3f72fc0c-d770-80ed-aca0-d1a83043911c" class="" dir="auto">CLI &gt; sh run</p><figure id="3f72fc0c-d770-80fb-bf54-c0ac32140bda" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day4/img/image%207.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day4/img/image%207.png"><img style="width:268.921875px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day4/img/image%207.png"/></a></figure><figure id="3f72fc0c-d770-80d0-9102-d69b439596d9" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day4/img/image%208.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day4/img/image%208.png"><img style="width:150.953125px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day4/img/image%208.png"/></a></figure><p id="3f72fc0c-d770-8079-aabb-d78e277cda9a" class="" dir="auto">no login (실험실 환경,, 편의)</p><figure id="3f72fc0c-d770-8051-baf1-cb9daccc440a" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day4/img/image%209.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day4/img/image%209.png"><img style="width:435.953125px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day4/img/image%209.png"/></a></figure></div></details><p id="3f72fc0c-d770-8048-ae70-cad9e8f869dd" class="" dir="auto">원격접근이 가능하려면</p><ol type="1" id="3f72fc0c-d770-803c-8685-ec9ab7900892" class="numbered-list" start="1" dir="auto"><li>IP setting</li></ol><ol type="1" id="3f72fc0c-d770-802a-bd98-ef920aea9c39" class="numbered-list" start="2" dir="auto"><li>enable pw / secret 설정</li></ol><ol type="1" id="3f72fc0c-d770-8014-a1f9-f20037b4d299" class="numbered-list" start="3" dir="auto"><li>line vty 설정</li></ol><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="3f72fc0c-d770-80d3-beb6-ee801131e4ef" class="code code-wrap"><code style="white-space:pre-wrap;word-break:break-all">Internet#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Internet(config)#line vty 0 15
+Internet(config-line)#no login
+Internet(config-line)#
+Internet#</code></pre><details id="3f72fc0c-d770-8016-8e06-e40eea337e51" class="toggle" dir="auto"><summary>Router CLI</summary><div class="indented"><figure id="3f72fc0c-d770-8012-bb3c-e7eb9e9a6981" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day4/img/image%2010.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day4/img/image%2010.png"><img style="width:292.78125px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day4/img/image%2010.png"/></a></figure><figure id="3f72fc0c-d770-8064-985a-d46875b51cb2" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day4/img/image%2011.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day4/img/image%2011.png"><img style="width:335.765625px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day4/img/image%2011.png"/></a></figure><figure id="3f72fc0c-d770-801f-963f-d510990573d4" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day4/img/image%2012.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day4/img/image%2012.png"><img style="width:246.96875px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day4/img/image%2012.png"/></a></figure></div></details><figure id="3f72fc0c-d770-8014-b59e-f9338ed76e5a" class="image" style="text-align:left" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day4/img/image%2013.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day4/img/image%2013.png"><img style="width:216.96875px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day4/img/image%2013.png"/></a></figure><details id="3f72fc0c-d770-8030-8208-fe053f12e228" class="toggle" dir="auto"><summary>Swtich CLI</summary><div class="indented"><figure id="3f72fc0c-d770-8012-82dc-fa8a07fd3835" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day4/img/image%2014.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day4/img/image%2014.png"><img style="width:574.984375px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day4/img/image%2014.png"/></a></figure></div></details><figure id="3f72fc0c-d770-80f3-a29a-fe077f96650e" class="image" style="text-align:left" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day4/img/image%2015.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day4/img/image%2015.png"><img style="width:230.984375px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day4/img/image%2015.png"/></a></figure><hr id="3f72fc0c-d770-807b-8009-e4bde0cc98c3" dir="auto"/><h2 id="3f72fc0c-d770-80fa-a380-fc34b0bd27cb" class="" dir="auto">SSH 구성</h2><p id="3f72fc0c-d770-8096-b202-e6abb7a93fc0" class="" dir="auto">단계<div class="indented"><ol type="1" id="3f72fc0c-d770-803d-836e-d59e62244399" class="numbered-list" start="1" dir="auto"><li>ssh설정 확인 (<code>#sh ip ssh</code>)</li></ol><ol type="1" id="3f72fc0c-d770-80fa-b67b-fe68e4844353" class="numbered-list" start="2" dir="auto"><li>도메인설정 (<code>(config)#ip domain-name </code><code><a href="http://cisco.com">cisco.com</a></code>)</li></ol><ol type="1" id="3f72fc0c-d770-8006-8769-dfb8ec0c5056" class="numbered-list" start="3" dir="auto"><li>RSA key pair 생성 및 ssh enbale (<code>(config)#crypto key generate rsa</code>)</li></ol><ol type="1" id="3f72fc0c-d770-80de-b20f-f0fc398d8102" class="numbered-list" start="4" dir="auto"><li>line vty 설정(<code>(config)#line vty 0 15</code>)</li></ol></div></p><details id="3f72fc0c-d770-80d3-b849-d22cee1a382d" class="toggle" dir="auto"><summary>R1 CLI</summary><div class="indented"><pre id="3f72fc0c-d770-8076-86c7-d90508e48794" class="code code-wrap"><code style="white-space:pre-wrap;word-break:break-all">R1#
+R1#conf t
+R1(config)#ip domain-name test.com
+R1(config)#crypto key generate rsa
+R1(config)#line vty 0 15
+R1(config-line)#login local
+R1(config-line)#transport input ssh
+R1(config-line)#exit
+R1(config)#enable secret cisco</code></pre><figure id="3f72fc0c-d770-80e7-b776-f9f6c3bc5177" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day4/img/image%2016.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day4/img/image%2016.png"><img style="width:478.96875px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day4/img/image%2016.png"/></a></figure><figure id="3f72fc0c-d770-8099-9b6a-d85ddf6eee82" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day4/img/image%2017.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day4/img/image%2017.png"><img style="width:624.96875px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day4/img/image%2017.png"/></a></figure><figure id="3f72fc0c-d770-80cb-80d0-cdc4ce594c0d" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day4/img/image%2018.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day4/img/image%2018.png"><img style="width:583.984375px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day4/img/image%2018.png"/></a></figure><figure id="3f72fc0c-d770-8017-ba44-c616cf7a0de8" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day4/img/image%2019.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day4/img/image%2019.png"><img style="width:403.984375px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day4/img/image%2019.png"/></a></figure></div></details><details id="3f72fc0c-d770-8031-8fde-e532797619c0" class="toggle" dir="auto"><summary>Internet CLI</summary><div class="indented"><pre id="3f72fc0c-d770-80ae-aa8e-cd74cfed125d" class="code code-wrap"><code style="white-space:pre-wrap;word-break:break-all">Internet(config)#user user1 pass test1
+Internet(config)#ip domain-name public.com
+Internet(config)#crypto key generate rsa
+Internet(config)#line vty 0 1
+Internet(config-line)#login local
+Internet(config-line)#transport input ssh
+Internet(config-line)#exit
+Internet(config)#enable secret cisco</code></pre><figure id="3f72fc0c-d770-80ba-bbc4-c733b260b205" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day4/img/image%2020.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day4/img/image%2020.png"><img style="width:509.859375px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day4/img/image%2020.png"/></a></figure><figure id="3f72fc0c-d770-806e-95c7-ef25fdfd3371" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day4/img/image%2021.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day4/img/image%2021.png"><img style="width:635.984375px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day4/img/image%2021.png"/></a></figure><figure id="3f72fc0c-d770-8011-847c-cc6e16bc882e" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day4/img/image%2022.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day4/img/image%2022.png"><img style="width:412.96875px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day4/img/image%2022.png"/></a></figure></div></details><p id="3f72fc0c-d770-80e0-934a-ea6af41a8b68" class="" dir="auto">
+</p></div></article>

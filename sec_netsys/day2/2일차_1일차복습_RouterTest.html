@@ -1,0 +1,330 @@
+<style>
+article.page {max-width: 900px; margin: 0 auto; color: rgb(55, 53, 47); line-height: 1.5; white-space: pre-wrap; text-align: left;}
+article.page {-webkit-print-color-adjust: exact;}
+article.page, article.page * {box-sizing: border-box;
+	-webkit-print-color-adjust: exact;}
+article.page, article.page {margin: 0;
+	padding: 0;}
+article.page {margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);}
+article.page {line-height: 1.5;
+	white-space: pre-wrap;}
+article.page a, article.page a.visited {color: inherit;
+	text-decoration: underline;}
+article.page h1, article.page h2, article.page h3 {letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;}
+article.page h1 strong, article.page h2 strong, article.page h3 strong {font-weight: 600;}
+article.page .page-title {font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;}
+article.page h1 {font-size: 1.875rem;
+	margin-top: 1.875rem;}
+article.page h2 {font-size: 1.5rem;
+	margin-top: 1.5rem;}
+article.page h3 {font-size: 1.25rem;
+	margin-top: 1.25rem;}
+article.page .source {border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;}
+article.page .callout {border-radius: 10px;
+	padding: 1rem;
+	
+	-webkit-box-decoration-break: clone;
+	box-decoration-break: clone;}
+article.page .callout.block-color-default_background {border: 1px solid rgba(55, 53, 47, 0.09);}
+article.page figure {margin: 1.25em 0;
+	page-break-inside: avoid;}
+article.page details, article.page aside {margin: 1.25em 0;}
+article.page summary {page-break-after: avoid;
+	break-after: avoid;}
+article.page summary h1, article.page summary h2, article.page summary h3, article.page summary h4 {margin-top: 0;}
+article.page figcaption {opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;}
+article.page mark {background-color: transparent;}
+article.page .indented {padding-left: 1.5em;}
+article.page hr {background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);}
+article.page img {max-width: 100%;}
+article.page .collection-content-wrapper {overflow-x: auto;}
+article.page .collection-content {font-size: 0.875rem;}
+article.page .collection-content td {white-space: pre-wrap;
+	word-break: break-word;}
+article.page .column-list {display: flex;
+	gap: 46px;}
+article.page .column {min-width: 0;
+	overflow: hidden;}
+article.page .column > *:first-child {margin-top: 0;}
+article.page .table_of_contents-item {display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding-inline: 0.125rem;
+	padding-block: 0.375rem;}
+article.page .table_of_contents-indent-1 {margin-left: 1.5rem;}
+article.page .table_of_contents-indent-2 {margin-left: 3rem;}
+article.page .table_of_contents-indent-3 {margin-left: 4.5rem;}
+article.page .table_of_contents-link {text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);}
+article.page table, article.page th, article.page td {border: 1px solid rgba(55, 53, 47, 0.09);}
+article.page table {border-collapse: collapse;
+	border-left: none;
+	border-right: none;}
+article.page th, article.page td {font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;}
+article.page th {color: rgba(55, 53, 47, 0.6);}
+article.page ol, article.page ul {margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;}
+article.page li > ol:first-child, article.page li > ul:first-child {margin-block-start: 0.6em;}
+article.page ul > li {list-style: disc;}
+article.page ul.to-do-list {padding-inline-start: 0;}
+article.page ul.to-do-list > li {list-style: none;}
+article.page .to-do-children-checked {text-decoration: line-through;
+	opacity: 0.375;}
+article.page ul.toggle > li {list-style: none;}
+article.page ul {padding-inline-start: 1.7em;}
+article.page ul > li {padding-left: 0.1em;}
+article.page ol {padding-inline-start: 1.6em;}
+article.page ol.numbered-list.numbered-list-digits-2 {padding-inline-start: 2em;}
+article.page ol.numbered-list.numbered-list-digits-3plus {padding-inline-start: 2.4em;}
+article.page ol > li {padding-left: 0.2em;}
+article.page .mono ol {padding-inline-start: 2em;}
+article.page .mono ol > li {text-indent: -0.4em;}
+article.page .toggle {padding-inline-start: 0em;
+	list-style-type: none;}
+article.page .toggle > li > details {padding-left: 1.7em;}
+article.page .toggle > li > details > summary {margin-left: -1.1em;}
+article.page .selected-value {display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;}
+article.page .collection-title {display: inline-block;
+	margin-right: 1em;}
+article.page .page-description {margin-bottom: 2em;}
+article.page .simple-table {margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;}
+article.page .simple-table td {height: 29px;
+	min-width: 120px;}
+article.page .simple-table th {height: 29px;
+	min-width: 120px;}
+article.page .simple-table-header-color {background: rgb(247, 246, 243);
+	color: black;}
+article.page .simple-table-header {font-weight: 500;}
+article.page time {opacity: 0.5;}
+article.page .icon {display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;}
+article.page .icon[data-emoji]::before {content: attr(data-emoji);}
+article.page img.icon {border-radius: 3px;}
+article.page .callout img.notion-static-icon {width: 1em;
+	height: 1em;}
+article.page .callout p {margin: 0;}
+article.page .callout h1, article.page .callout h2, article.page .callout h3 {margin: 0 0 0.6rem;}
+article.page .user-icon {width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;}
+article.page .user-icon-inner {font-size: 0.8em;}
+article.page .text-icon {border: 1px solid #000;
+	text-align: center;}
+article.page .page-cover-image {display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;}
+article.page .page-header-icon {font-size: 3rem;
+	margin-bottom: 1rem;}
+article.page .page-header-icon-with-cover {margin-top: -0.72em;
+	margin-left: 0.07em;}
+article.page .page-header-icon img {border-radius: 3px;}
+article.page .link-to-page {margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;}
+article.page p > .user {opacity: 0.5;}
+article.page td > .user, article.page td > time {white-space: nowrap;}
+article.page input[type="checkbox"] {margin-right: 0.4em;
+	vertical-align: middle;}
+article.page p {margin-top: 0.5em;
+	margin-bottom: 0.5em;}
+article.page .image {border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;}
+article.page .code, article.page code {background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;}
+article.page code {color: #eb5757;}
+article.page .code {padding: 1.5em 1em;}
+article.page .code-wrap {white-space: pre-wrap;
+	word-break: break-all;}
+article.page .code > code {background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;}
+article.page blockquote {font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);}
+article.page blockquote.quote-large {font-size: 1.25em;}
+article.page .bookmark {text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;}
+article.page .bookmark-title {font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;}
+article.page .bookmark-text {display: flex;
+	flex-direction: column;}
+article.page .bookmark-info {flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;}
+article.page .bookmark-image {width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;}
+article.page .bookmark-description {color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;}
+article.page .bookmark-href {font-size: 0.75em;
+	margin-top: 0.25em;}
+article.page .tab {margin: 1.25em 0;
+	padding-inline: 1rem;
+	border: 1px solid rgba(55, 53, 47, 0.09);}
+article.page.sans, article.page .sans {font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";}
+article.page .code {font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace;}
+article.page.serif, article.page .serif {font-family: Lyon-Text, Georgia, ui-serif, serif;}
+article.page.mono, article.page .mono {font-family: iawriter-mono, Nitti, Menlo, Courier, monospace;}
+article.page .highlight-default {color: rgba(44, 44, 43, 1);}
+article.page .highlight-gray {color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);}
+article.page .highlight-brown {color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);}
+article.page .highlight-orange {color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);}
+article.page .highlight-yellow {color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);}
+article.page .highlight-teal {color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);}
+article.page .highlight-blue {color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);}
+article.page .highlight-purple {color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);}
+article.page .highlight-pink {color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);}
+article.page .highlight-red {color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);}
+article.page .highlight-default_background {color: rgba(44, 44, 43, 1);}
+article.page .highlight-gray_background {background: rgba(42, 28, 0, 0.07);}
+article.page .highlight-brown_background {background: rgba(139, 46, 0, 0.086);}
+article.page .highlight-orange_background {background: rgba(224, 101, 1, 0.129);}
+article.page .highlight-yellow_background {background: rgba(211, 168, 0, 0.137);}
+article.page .highlight-teal_background {background: rgba(0, 100, 45, 0.09);}
+article.page .highlight-blue_background {background: rgba(0, 124, 215, 0.094);}
+article.page .highlight-purple_background {background: rgba(102, 0, 178, 0.078);}
+article.page .highlight-pink_background {background: rgba(197, 0, 93, 0.086);}
+article.page .highlight-red_background {background: rgba(223, 22, 0, 0.094);}
+article.page .block-color-default {color: inherit;
+	fill: inherit;}
+article.page .block-color-gray {color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);}
+article.page .block-color-brown {color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);}
+article.page .block-color-orange {color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);}
+article.page .block-color-yellow {color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);}
+article.page .block-color-teal {color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);}
+article.page .block-color-blue {color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);}
+article.page .block-color-purple {color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);}
+article.page .block-color-pink {color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);}
+article.page .block-color-red {color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);}
+article.page .block-color-default_background {color: inherit;
+	fill: inherit;}
+article.page .block-color-gray_background {background: rgba(240, 239, 237, 1);}
+article.page .block-color-brown_background {background: rgba(245, 237, 233, 1);}
+article.page .block-color-orange_background {background: rgba(251, 235, 222, 1);}
+article.page .block-color-yellow_background {background: rgba(249, 243, 220, 1);}
+article.page .block-color-teal_background {background: rgba(232, 241, 236, 1);}
+article.page .block-color-blue_background {background: rgba(229, 242, 252, 1);}
+article.page .block-color-purple_background {background: rgba(243, 235, 249, 1);}
+article.page .block-color-pink_background {background: rgba(250, 233, 241, 1);}
+article.page .block-color-red_background {background: rgba(252, 233, 231, 1);}
+article.page .select-value-color-default {background-color: rgba(42, 28, 0, 0.07);}
+article.page .select-value-color-gray {background-color: rgba(28, 19, 1, 0.11);}
+article.page .select-value-color-brown {background-color: rgba(127, 51, 0, 0.156);}
+article.page .select-value-color-orange {background-color: rgba(196, 88, 0, 0.203);}
+article.page .select-value-color-yellow {background-color: rgba(209, 156, 0, 0.282);}
+article.page .select-value-color-green {background-color: rgba(0, 96, 38, 0.156);}
+article.page .select-value-color-blue {background-color: rgba(0, 118, 217, 0.203);}
+article.page .select-value-color-purple {background-color: rgba(92, 0, 163, 0.141);}
+article.page .select-value-color-pink {background-color: rgba(183, 0, 78, 0.152);}
+article.page .select-value-color-red {background-color: rgba(206, 24, 0, 0.164);}
+article.page .checkbox {display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;}
+article.page .checkbox-on {background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");}
+article.page .checkbox-off {background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");}
+/* toggle-extras */
+article.page details {border-top: 3px solid rgb(55, 53, 47); border-bottom: 3px solid rgb(55, 53, 47); padding: 0.6em 0; margin: 1.5em 0;}
+article.page details details {border-width: 2px; border-color: rgba(55, 53, 47, 0.45);}
+article.page details > summary {cursor: pointer;}
+article.page details > summary::after {content: "열기"; margin-left: 0.6em; padding: 0.1em 0.5em; font-size: 0.75em; font-weight: 500; font-style: normal; color: rgb(120, 119, 116); background: rgba(135, 131, 120, 0.15); border-radius: 4px; vertical-align: 0.1em;}
+article.page details[open] > summary::after {content: "닫기";}
+/* list-fix */
+article.page ol, article.page ul {margin-top: 0.1em !important; margin-bottom: 0.1em !important;}
+article.page li {margin-top: 0 !important; margin-bottom: 0 !important;}
+article.page li > p {margin-top: 0 !important; margin-bottom: 0 !important;}
+article.page p:empty {display: none !important;}
+/* table-fix */
+article.page {max-width: 100% !important; overflow-x: hidden;}
+article.page table {display: block; max-width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch;}
+article.page .simple-table td, article.page .simple-table th {min-width: 0 !important; width: auto !important; word-break: keep-all;}
+article.page img {max-width: 100% !important; height: auto;}
+</style><article id="3f22fc0c-d770-80aa-bf79-fc6628c1b4db" class="page sans"><header><h1 class="page-title" dir="auto">2일차 10/07</h1><p class="page-description" dir="auto"></p></header><div class="page-body"><h1 id="3f22fc0c-d770-803a-a568-d3ccf8c329db" class="" dir="auto">1일차 복습</h1><p id="3f22fc0c-d770-80c4-bde9-ee978613a582" class="" dir="auto">protocol<div class="indented"><ul id="3f22fc0c-d770-8065-90de-ea8cb29d50fd" class="bulleted-list" dir="auto"><li style="list-style-type:disc">OSI 7 Layer - 통신 표준 protocol</li></ul><ul id="3f22fc0c-d770-8074-b2e9-d1f505c3b8c3" class="bulleted-list" dir="auto"><li style="list-style-type:disc">TCP/IP</li></ul></div></p><p id="3f22fc0c-d770-8058-ab2e-c08de9a114ea" class="" dir="auto">OSI 7 Layer</p><p id="3f22fc0c-d770-8086-b626-eca625b80d45" class="" dir="auto">L1 physical - 물리적 연결 : 케이블</p><p id="3f22fc0c-d770-8003-98e8-f2c95180f073" class="" dir="auto">L2 DataLink - 논리적 연결 : MAC(0x, 12자리) 주소 - <mark class="highlight-red" data-notion-highlight="red"><strong>물리적, 평면적</strong></mark></p><p id="3f22fc0c-d770-8003-8e95-ecd9f64279cc" class="" dir="auto">L3 Network - 네트워크간 연결 ↔ TCP/IP 에서는 <mark class="highlight-red" data-notion-highlight="red"><code>Inter</code></mark><mark class="highlight-default" data-notion-highlight="default"><strong>|</strong></mark><mark class="highlight-blue" data-notion-highlight="blue"><code>network</code></mark><div class="indented"><p id="3f22fc0c-d770-8090-94c7-fe652a3044f0" class="" dir="auto">Local / Remote</p><ol type="1" id="3f22fc0c-d770-803d-bf88-e4170f4b4698" class="numbered-list" start="1" dir="auto"><li>Routing 길찾기</li></ol><ol type="1" id="3f22fc0c-d770-80eb-85f9-e806cc6ce560" class="numbered-list" start="2" dir="auto"><li>주소 IP : <mark class="highlight-red" data-notion-highlight="red"><strong>논리적, 계층적</strong></mark></li></ol></div></p><p id="3f22fc0c-d770-8037-a7e9-f63d01f4024a" class="" dir="auto">L4 Transport - end to end connection</p><p id="3f22fc0c-d770-804a-b5b1-cd2cf272c76c" class="" dir="auto">L5 Session - end to end Service : 인증</p><p id="3f22fc0c-d770-80cd-a704-def41527b6d1" class="" dir="auto">L6 Presentation - data 형태 결정</p><p id="3f22fc0c-d770-80ae-9886-d114baab0e32" class="" dir="auto">L7 UserInterface - </p><table id="3f22fc0c-d770-809b-996d-fb8787be7c3d" class="simple-table" dir="ltr"><tbody><tr id="3f22fc0c-d770-8089-a333-c110685d4511" dir="ltr"><td id="azsT" class="" style="width:68.65625px">계층</td><td id="A`tW" class="" style="width:137.65625px">PDU</td><td id="Xvjt" class="" style="width:145.65625px">Control Information</td><td id="BNsH" class="">dev</td><td id="lF{Q" class=""></td></tr><tr id="3f22fc0c-d770-80b9-ab18-c27c6c5ad50d" dir="ltr"><td id="azsT" class="" style="width:68.65625px">L1</td><td id="A`tW" class="" style="width:137.65625px">Signal ↔ Bits</td><td id="Xvjt" class="" style="width:145.65625px"></td><td id="BNsH" class="">케이블</td><td id="lF{Q" class=""></td></tr><tr id="3f22fc0c-d770-8041-9320-e57176dab531" dir="ltr"><td id="azsT" class="" style="width:68.65625px">L2</td><td id="A`tW" class="" style="width:137.65625px">Frame</td><td id="Xvjt" class="" style="width:145.65625px">MAC addr</td><td id="BNsH" class="">Switch, NIC</td><td id="lF{Q" class="">MAC Table(RAM)</td></tr><tr id="3f22fc0c-d770-80f6-bcc4-d249067296ca" dir="ltr"><td id="azsT" class="" style="width:68.65625px">L3</td><td id="A`tW" class="" style="width:137.65625px">Packet</td><td id="Xvjt" class="" style="width:145.65625px">IP addr</td><td id="BNsH" class="">Router</td><td id="lF{Q" class="">Router Table(RAM)</td></tr><tr id="3f22fc0c-d770-8085-ba79-c3ea7dc117dc" dir="ltr"><td id="azsT" class="" style="width:68.65625px">L4</td><td id="A`tW" class="" style="width:137.65625px">Segment(TCP),<br/>Datagram(UDP)</td><td id="Xvjt" class="" style="width:145.65625px">port</td><td id="BNsH" class=""></td><td id="lF{Q" class=""></td></tr><tr id="3f22fc0c-d770-80ad-823c-f49e7733e3b6" dir="ltr"><td id="azsT" class="" style="width:68.65625px">L5~L7</td><td id="A`tW" class="" style="width:137.65625px">Data, Message</td><td id="Xvjt" class="" style="width:145.65625px">응용 프로토콜 헤더 (HTTP)</td><td id="BNsH" class=""></td><td id="lF{Q" class=""></td></tr></tbody></table><hr id="3f22fc0c-d770-8038-86d7-f8f379e2e598" dir="auto"/><h1 id="3f22fc0c-d770-801a-b545-de0386a53c71" class="" dir="auto">Router test (Cisco Packet Tracer)</h1><figure id="3f22fc0c-d770-8036-8ec7-f3a1ae33c39b" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day2/img/01.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day2/img/01.png"><img style="width:494.984375px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day2/img/01.png"/></a></figure><p id="3f22fc0c-d770-80ed-91ef-f8c10a5a5914" class="" dir="auto">C  ip지정→ 192.168.2.10</p><p id="3f22fc0c-d770-80d6-9a21-dbee2dd7b685" class="" dir="auto">Router CLI</p><figure id="3f22fc0c-d770-80e4-aee9-c278fe4972a1" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day2/img/02.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day2/img/02.png"><img style="width:479.984375px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day2/img/02.png"/></a></figure><p id="3f22fc0c-d770-80a3-89b4-f814879a92b5" class="" dir="auto">sh ip int brief &gt; 인터페이스 요약<br/>en &gt; 관리자 모드 #<br/>int f0/0 &gt;f0/0설정<br/>ip 192.168.1.1 / subnet 255.255.255.0<br/>no shut down<br/>int f0/1 &gt;f0/1설정<br/>ip 192.168.2.1 / subnet 255.255.255.0</p><figure id="3f22fc0c-d770-8013-8acb-eef1677bb481" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day2/img/03.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day2/img/03.png"><img style="width:479.90625px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day2/img/03.png"/></a></figure><p id="3f22fc0c-d770-802d-b1d1-cf6d070bd756" class="" dir="auto">여기까지 Router설정</p><p id="3f22fc0c-d770-8056-a256-fd7e2557a24f" class="" dir="auto">ping test, C→Router Gateway</p><figure id="3f22fc0c-d770-801d-a96d-f1358b0afe9f" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day2/img/04.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day2/img/04.png"><img style="width:479.984375px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day2/img/04.png"/></a></figure><hr id="3f22fc0c-d770-8007-91bc-ef4d1836a089" dir="auto"/><p id="3f22fc0c-d770-8045-9b92-efe5d44f6f7e" class="" dir="auto">A, C PC의 GateWay설정</p><figure id="3f22fc0c-d770-801a-9052-fc5dcc140988" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day2/img/05.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day2/img/05.png"><img style="width:479.96875px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day2/img/05.png"/></a></figure><figure id="3f22fc0c-d770-809b-b36d-fbadada4b5e1" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day2/img/06.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day2/img/06.png"><img style="width:479.984375px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day2/img/06.png"/></a></figure><p id="3f22fc0c-d770-80b1-bb45-f6c2ea9144e3" class="" dir="auto">이후 연결 테스트</p><figure id="3f22fc0c-d770-80fa-8f34-e331ae5cc091" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day2/img/07.gif" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day2/img/07.gif"><img style="width:415.96875px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day2/img/07.gif"/></a></figure><figure id="3f22fc0c-d770-8025-831c-fc251279157c" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day2/img/08.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day2/img/08.png"><img style="width:479.96875px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sec_netsys/day2/img/08.png"/></a></figure><hr id="3f22fc0c-d770-80de-9f21-d960416f72ef" dir="auto"/></div></article>
