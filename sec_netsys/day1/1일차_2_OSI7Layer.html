@@ -1,0 +1,320 @@
+<style>
+article.page {max-width: 900px; margin: 0 auto; color: rgb(55, 53, 47); line-height: 1.5; white-space: pre-wrap; text-align: left;}
+article.page {-webkit-print-color-adjust: exact;}
+article.page, article.page * {box-sizing: border-box;
+	-webkit-print-color-adjust: exact;}
+article.page, article.page {margin: 0;
+	padding: 0;}
+article.page {margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);}
+article.page {line-height: 1.5;
+	white-space: pre-wrap;}
+article.page a, article.page a.visited {color: inherit;
+	text-decoration: underline;}
+article.page h1, article.page h2, article.page h3 {letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;}
+article.page h1 strong, article.page h2 strong, article.page h3 strong {font-weight: 600;}
+article.page .page-title {font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;}
+article.page h1 {font-size: 1.875rem;
+	margin-top: 1.875rem;}
+article.page h2 {font-size: 1.5rem;
+	margin-top: 1.5rem;}
+article.page h3 {font-size: 1.25rem;
+	margin-top: 1.25rem;}
+article.page .source {border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;}
+article.page .callout {border-radius: 10px;
+	padding: 1rem;
+	
+	-webkit-box-decoration-break: clone;
+	box-decoration-break: clone;}
+article.page .callout.block-color-default_background {border: 1px solid rgba(55, 53, 47, 0.09);}
+article.page figure {margin: 1.25em 0;
+	page-break-inside: avoid;}
+article.page details, article.page aside {margin: 1.25em 0;}
+article.page summary {page-break-after: avoid;
+	break-after: avoid;}
+article.page summary h1, article.page summary h2, article.page summary h3, article.page summary h4 {margin-top: 0;}
+article.page figcaption {opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;}
+article.page mark {background-color: transparent;}
+article.page .indented {padding-left: 1.5em;}
+article.page hr {background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);}
+article.page img {max-width: 100%;}
+article.page .collection-content-wrapper {overflow-x: auto;}
+article.page .collection-content {font-size: 0.875rem;}
+article.page .collection-content td {white-space: pre-wrap;
+	word-break: break-word;}
+article.page .column-list {display: flex;
+	gap: 46px;}
+article.page .column {min-width: 0;
+	overflow: hidden;}
+article.page .column > *:first-child {margin-top: 0;}
+article.page .table_of_contents-item {display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding-inline: 0.125rem;
+	padding-block: 0.375rem;}
+article.page .table_of_contents-indent-1 {margin-left: 1.5rem;}
+article.page .table_of_contents-indent-2 {margin-left: 3rem;}
+article.page .table_of_contents-indent-3 {margin-left: 4.5rem;}
+article.page .table_of_contents-link {text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);}
+article.page table, article.page th, article.page td {border: 1px solid rgba(55, 53, 47, 0.09);}
+article.page table {border-collapse: collapse;
+	border-left: none;
+	border-right: none;}
+article.page th, article.page td {font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;}
+article.page th {color: rgba(55, 53, 47, 0.6);}
+article.page ol, article.page ul {margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;}
+article.page li > ol:first-child, article.page li > ul:first-child {margin-block-start: 0.6em;}
+article.page ul > li {list-style: disc;}
+article.page ul.to-do-list {padding-inline-start: 0;}
+article.page ul.to-do-list > li {list-style: none;}
+article.page .to-do-children-checked {text-decoration: line-through;
+	opacity: 0.375;}
+article.page ul.toggle > li {list-style: none;}
+article.page ul {padding-inline-start: 1.7em;}
+article.page ul > li {padding-left: 0.1em;}
+article.page ol {padding-inline-start: 1.6em;}
+article.page ol.numbered-list.numbered-list-digits-2 {padding-inline-start: 2em;}
+article.page ol.numbered-list.numbered-list-digits-3plus {padding-inline-start: 2.4em;}
+article.page ol > li {padding-left: 0.2em;}
+article.page .mono ol {padding-inline-start: 2em;}
+article.page .mono ol > li {text-indent: -0.4em;}
+article.page .toggle {padding-inline-start: 0em;
+	list-style-type: none;}
+article.page .toggle > li > details {padding-left: 1.7em;}
+article.page .toggle > li > details > summary {margin-left: -1.1em;}
+article.page .selected-value {display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;}
+article.page .collection-title {display: inline-block;
+	margin-right: 1em;}
+article.page .page-description {margin-bottom: 2em;}
+article.page .simple-table {margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;}
+article.page .simple-table td {height: 29px;
+	min-width: 120px;}
+article.page .simple-table th {height: 29px;
+	min-width: 120px;}
+article.page .simple-table-header-color {background: rgb(247, 246, 243);
+	color: black;}
+article.page .simple-table-header {font-weight: 500;}
+article.page time {opacity: 0.5;}
+article.page .icon {display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;}
+article.page .icon[data-emoji]::before {content: attr(data-emoji);}
+article.page img.icon {border-radius: 3px;}
+article.page .callout img.notion-static-icon {width: 1em;
+	height: 1em;}
+article.page .callout p {margin: 0;}
+article.page .callout h1, article.page .callout h2, article.page .callout h3 {margin: 0 0 0.6rem;}
+article.page .user-icon {width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;}
+article.page .user-icon-inner {font-size: 0.8em;}
+article.page .text-icon {border: 1px solid #000;
+	text-align: center;}
+article.page .page-cover-image {display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;}
+article.page .page-header-icon {font-size: 3rem;
+	margin-bottom: 1rem;}
+article.page .page-header-icon-with-cover {margin-top: -0.72em;
+	margin-left: 0.07em;}
+article.page .page-header-icon img {border-radius: 3px;}
+article.page .link-to-page {margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;}
+article.page p > .user {opacity: 0.5;}
+article.page td > .user, article.page td > time {white-space: nowrap;}
+article.page input[type="checkbox"] {margin-right: 0.4em;
+	vertical-align: middle;}
+article.page p {margin-top: 0.5em;
+	margin-bottom: 0.5em;}
+article.page .image {border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;}
+article.page .code, article.page code {background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;}
+article.page code {color: #eb5757;}
+article.page .code {padding: 1.5em 1em;}
+article.page .code-wrap {white-space: pre-wrap;
+	word-break: break-all;}
+article.page .code > code {background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;}
+article.page blockquote {font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);}
+article.page blockquote.quote-large {font-size: 1.25em;}
+article.page .bookmark {text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;}
+article.page .bookmark-title {font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;}
+article.page .bookmark-text {display: flex;
+	flex-direction: column;}
+article.page .bookmark-info {flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;}
+article.page .bookmark-image {width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;}
+article.page .bookmark-description {color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;}
+article.page .bookmark-href {font-size: 0.75em;
+	margin-top: 0.25em;}
+article.page .tab {margin: 1.25em 0;
+	padding-inline: 1rem;
+	border: 1px solid rgba(55, 53, 47, 0.09);}
+article.page.sans, article.page .sans {font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";}
+article.page .code {font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace;}
+article.page.serif, article.page .serif {font-family: Lyon-Text, Georgia, ui-serif, serif;}
+article.page.mono, article.page .mono {font-family: iawriter-mono, Nitti, Menlo, Courier, monospace;}
+article.page .highlight-default {color: rgba(44, 44, 43, 1);}
+article.page .highlight-gray {color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);}
+article.page .highlight-brown {color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);}
+article.page .highlight-orange {color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);}
+article.page .highlight-yellow {color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);}
+article.page .highlight-teal {color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);}
+article.page .highlight-blue {color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);}
+article.page .highlight-purple {color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);}
+article.page .highlight-pink {color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);}
+article.page .highlight-red {color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);}
+article.page .highlight-default_background {color: rgba(44, 44, 43, 1);}
+article.page .highlight-gray_background {background: rgba(42, 28, 0, 0.07);}
+article.page .highlight-brown_background {background: rgba(139, 46, 0, 0.086);}
+article.page .highlight-orange_background {background: rgba(224, 101, 1, 0.129);}
+article.page .highlight-yellow_background {background: rgba(211, 168, 0, 0.137);}
+article.page .highlight-teal_background {background: rgba(0, 100, 45, 0.09);}
+article.page .highlight-blue_background {background: rgba(0, 124, 215, 0.094);}
+article.page .highlight-purple_background {background: rgba(102, 0, 178, 0.078);}
+article.page .highlight-pink_background {background: rgba(197, 0, 93, 0.086);}
+article.page .highlight-red_background {background: rgba(223, 22, 0, 0.094);}
+article.page .block-color-default {color: inherit;
+	fill: inherit;}
+article.page .block-color-gray {color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);}
+article.page .block-color-brown {color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);}
+article.page .block-color-orange {color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);}
+article.page .block-color-yellow {color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);}
+article.page .block-color-teal {color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);}
+article.page .block-color-blue {color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);}
+article.page .block-color-purple {color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);}
+article.page .block-color-pink {color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);}
+article.page .block-color-red {color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);}
+article.page .block-color-default_background {color: inherit;
+	fill: inherit;}
+article.page .block-color-gray_background {background: rgba(240, 239, 237, 1);}
+article.page .block-color-brown_background {background: rgba(245, 237, 233, 1);}
+article.page .block-color-orange_background {background: rgba(251, 235, 222, 1);}
+article.page .block-color-yellow_background {background: rgba(249, 243, 220, 1);}
+article.page .block-color-teal_background {background: rgba(232, 241, 236, 1);}
+article.page .block-color-blue_background {background: rgba(229, 242, 252, 1);}
+article.page .block-color-purple_background {background: rgba(243, 235, 249, 1);}
+article.page .block-color-pink_background {background: rgba(250, 233, 241, 1);}
+article.page .block-color-red_background {background: rgba(252, 233, 231, 1);}
+article.page .select-value-color-default {background-color: rgba(42, 28, 0, 0.07);}
+article.page .select-value-color-gray {background-color: rgba(28, 19, 1, 0.11);}
+article.page .select-value-color-brown {background-color: rgba(127, 51, 0, 0.156);}
+article.page .select-value-color-orange {background-color: rgba(196, 88, 0, 0.203);}
+article.page .select-value-color-yellow {background-color: rgba(209, 156, 0, 0.282);}
+article.page .select-value-color-green {background-color: rgba(0, 96, 38, 0.156);}
+article.page .select-value-color-blue {background-color: rgba(0, 118, 217, 0.203);}
+article.page .select-value-color-purple {background-color: rgba(92, 0, 163, 0.141);}
+article.page .select-value-color-pink {background-color: rgba(183, 0, 78, 0.152);}
+article.page .select-value-color-red {background-color: rgba(206, 24, 0, 0.164);}
+article.page .checkbox {display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;}
+article.page .checkbox-on {background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");}
+article.page .checkbox-off {background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");}
+/* toggle-extras */
+article.page details {border-top: 3px solid rgb(55, 53, 47); border-bottom: 3px solid rgb(55, 53, 47); padding: 0.6em 0; margin: 1.5em 0;}
+article.page details details {border-width: 2px; border-color: rgba(55, 53, 47, 0.45);}
+article.page details > summary {cursor: pointer;}
+article.page details > summary::after {content: "열기"; margin-left: 0.6em; padding: 0.1em 0.5em; font-size: 0.75em; font-weight: 500; font-style: normal; color: rgb(120, 119, 116); background: rgba(135, 131, 120, 0.15); border-radius: 4px; vertical-align: 0.1em;}
+article.page details[open] > summary::after {content: "닫기";}
+</style><article id="3f12fc0c-d770-8026-8483-ccc9e0a9e35f" class="page sans"><header><h1 class="page-title" dir="auto">1일차 10/06</h1><p class="page-description" dir="auto"></p></header><div class="page-body"><h1 id="3f12fc0c-d770-80f2-a578-f866c2e29e43" class="" dir="auto">2.OSI 7 Layer</h1><h2 id="3f12fc0c-d770-800c-9a62-c65440bfc41a" class="" dir="auto">통신 Protocol 표준</h2><p id="3f12fc0c-d770-805a-be9b-f160fad40a24" class="" dir="auto">Data 생성 x, Data 송수신 o</p><figure id="3f12fc0c-d770-8060-bfc3-f589a7d409a8" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sys%2Bnetwork/1%EC%9D%BC%EC%B0%A8/tistory_images_1%EC%9D%BC%EC%B0%A8/08.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sys%2Bnetwork/1%EC%9D%BC%EC%B0%A8/tistory_images_1%EC%9D%BC%EC%B0%A8/08.png"><img style="width:703.984375px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sys%2Bnetwork/1%EC%9D%BC%EC%B0%A8/tistory_images_1%EC%9D%BC%EC%B0%A8/08.png"/></a></figure><ol type="1" id="3f12fc0c-d770-8078-815a-cc6db47cd9a4" class="numbered-list" start="1" dir="auto"><li>Physical 물리적 연결(통신<mark class="highlight-red" data-notion-highlight="red"><strong>매체</strong></mark> - 유/무선)<figure id="3f12fc0c-d770-8020-8a3e-c69058d6ec47" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sys%2Bnetwork/1%EC%9D%BC%EC%B0%A8/tistory_images_1%EC%9D%BC%EC%B0%A8/09.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sys%2Bnetwork/1%EC%9D%BC%EC%B0%A8/tistory_images_1%EC%9D%BC%EC%B0%A8/09.png"><img style="width:703.96875px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sys%2Bnetwork/1%EC%9D%BC%EC%B0%A8/tistory_images_1%EC%9D%BC%EC%B0%A8/09.png"/></a></figure><details id="3f12fc0c-d770-8032-a4ae-f36c313dbea6" class="toggle" dir="auto"><summary>통신매체</summary><div class="indented"><figure id="3f12fc0c-d770-804a-a258-f7a92bc8b215" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sys%2Bnetwork/1%EC%9D%BC%EC%B0%A8/tistory_images_1%EC%9D%BC%EC%B0%A8/10.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sys%2Bnetwork/1%EC%9D%BC%EC%B0%A8/tistory_images_1%EC%9D%BC%EC%B0%A8/10.png"><img style="width:501.984375px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sys%2Bnetwork/1%EC%9D%BC%EC%B0%A8/tistory_images_1%EC%9D%BC%EC%B0%A8/10.png"/></a></figure><figure id="3f12fc0c-d770-80eb-a76a-c389d62996c3" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sys%2Bnetwork/1%EC%9D%BC%EC%B0%A8/tistory_images_1%EC%9D%BC%EC%B0%A8/11.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sys%2Bnetwork/1%EC%9D%BC%EC%B0%A8/tistory_images_1%EC%9D%BC%EC%B0%A8/11.png"><img style="width:261.984375px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sys%2Bnetwork/1%EC%9D%BC%EC%B0%A8/tistory_images_1%EC%9D%BC%EC%B0%A8/11.png"/></a></figure></div></details></li></ol><ol type="1" id="3f12fc0c-d770-80dc-8251-e64fd1ac9604" class="numbered-list" start="2" dir="auto"><li>Data Link 논리적 연결, <mark class="highlight-red" data-notion-highlight="red"><strong>주소(L2 AMC)</strong></mark><br/><figure id="3f12fc0c-d770-804c-849e-ea98b4dd1235" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sys%2Bnetwork/1%EC%9D%BC%EC%B0%A8/tistory_images_1%EC%9D%BC%EC%B0%A8/12.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sys%2Bnetwork/1%EC%9D%BC%EC%B0%A8/tistory_images_1%EC%9D%BC%EC%B0%A8/12.png"><img style="width:703.9375px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sys%2Bnetwork/1%EC%9D%BC%EC%B0%A8/tistory_images_1%EC%9D%BC%EC%B0%A8/12.png"/></a></figure><p id="3f12fc0c-d770-8094-b7fc-e2b7d8033987" class="" dir="auto">주소 제공 : 물리적인 평면적인 특징<br/>MAC 16진수 12자리<br/><br/>CMD → <code>ipconfig /all</code></p><figure id="3f12fc0c-d770-8019-a0a0-ce8a5446f781" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sys%2Bnetwork/1%EC%9D%BC%EC%B0%A8/tistory_images_1%EC%9D%BC%EC%B0%A8/13.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sys%2Bnetwork/1%EC%9D%BC%EC%B0%A8/tistory_images_1%EC%9D%BC%EC%B0%A8/13.png"><img style="width:663.890625px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sys%2Bnetwork/1%EC%9D%BC%EC%B0%A8/tistory_images_1%EC%9D%BC%EC%B0%A8/13.png"/></a></figure></li></ol><ol type="1" id="3f12fc0c-d770-805e-a337-e6b275c21299" class="numbered-list" start="3" dir="auto"><li>[Network 네트워크]<mark class="highlight-red" data-notion-highlight="red"><strong>간</strong></mark> 연결, <mark class="highlight-red" data-notion-highlight="red"><strong>주소(L3 IP)</strong></mark><br/><mark class="highlight-orange" data-notion-highlight="orange"><strong>목적 : 다른 네트워크에 있는 주소 찾아가기</strong></mark><figure id="3f12fc0c-d770-8049-92ad-d11b4a7b8798" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sys%2Bnetwork/1%EC%9D%BC%EC%B0%A8/tistory_images_1%EC%9D%BC%EC%B0%A8/14.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sys%2Bnetwork/1%EC%9D%BC%EC%B0%A8/tistory_images_1%EC%9D%BC%EC%B0%A8/14.png"><img style="width:665.96875px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sys%2Bnetwork/1%EC%9D%BC%EC%B0%A8/tistory_images_1%EC%9D%BC%EC%B0%A8/14.png"/></a></figure><p id="3f12fc0c-d770-80e9-ab96-dbbe3c6d6913" class="" dir="auto">Network 구축 운영을 위해 필요한 계층 : 1,2계층<br/>Local / Remote<br/>Local(내 시스템), Remote(내 시스템 제외 나머지)<br/>A, B, C가 있을때 각자 입장에서<br/>A입장에서는 Local(A시스템), Remote(A제외 나머지)</p><p id="3f12fc0c-d770-8097-84dc-d13eef7f4b82" class="" dir="auto">N1, N2, N3 간 연결</p><ol type="1" id="3f12fc0c-d770-80eb-b686-ca71b9e20f23" class="numbered-list" start="1" dir="auto"><li>routing (Path Determination) 경로 결정<br/>Best Path 결정</li></ol><ol type="1" id="3f12fc0c-d770-80a0-aafd-fd2213c9f54f" class="numbered-list" start="2" dir="auto"><li>주소 제공<br/>논리적이 계층적인 특성(범위 좁히기)<br/>Network + Host<br/>IP주소 + SubnetMask</li></ol></li></ol><ol type="1" id="3f12fc0c-d770-8003-bb30-e14eb86bba03" class="numbered-list" start="4" dir="auto"><li>Transport 양단간 연결(End to End)<figure id="3f12fc0c-d770-80a3-99b4-d9707002f51e" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sys%2Bnetwork/1%EC%9D%BC%EC%B0%A8/tistory_images_1%EC%9D%BC%EC%B0%A8/15.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sys%2Bnetwork/1%EC%9D%BC%EC%B0%A8/tistory_images_1%EC%9D%BC%EC%B0%A8/15.png"><img style="width:520.96875px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sys%2Bnetwork/1%EC%9D%BC%EC%B0%A8/tistory_images_1%EC%9D%BC%EC%B0%A8/15.png"/></a></figure><figure id="3f12fc0c-d770-8074-98f1-cf601ccf340c" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sys%2Bnetwork/1%EC%9D%BC%EC%B0%A8/tistory_images_1%EC%9D%BC%EC%B0%A8/16.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sys%2Bnetwork/1%EC%9D%BC%EC%B0%A8/tistory_images_1%EC%9D%BC%EC%B0%A8/16.png"><img style="width:478.984375px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sys%2Bnetwork/1%EC%9D%BC%EC%B0%A8/tistory_images_1%EC%9D%BC%EC%B0%A8/16.png"/></a></figure><p id="3f12fc0c-d770-80c4-a3d7-f30e85701cc1" class="" dir="auto"><code>ping [addr]</code><br/>접근 목적: <del>Data</del>, Service 요청</p><aside class="block-color-gray_background callout" data-notion-callout="" data-notion-callout-icon="💡" data-notion-callout-background="gray_background" style="white-space:pre-wrap;display:flex" id="3f12fc0c-d770-8063-94cb-df75bf6f36ca" dir="ltr"><div style="font-size:1.5em"><span class="icon" data-emoji="💡"></span></div><div style="width:100%"><p id="3f12fc0c-d770-8044-91d3-e9a984b4a2ae" class="" dir="auto"><mark class="highlight-red" data-notion-highlight="red"><strong>주소제공 : End(Service)구분 목적, Port#</strong></mark></p><table id="3f12fc0c-d770-8051-9196-df47cfa8016c" class="simple-table" dir="ltr"><tbody><tr id="3f12fc0c-d770-8054-8f01-fb1deb3626d3" dir="ltr"><td id="[Kdb" class="" style="width:112px"><mark class="highlight-default" data-notion-highlight="default">1~1023</mark></td><td id="nM&gt;{" class="" style="width:349px"><mark class="highlight-default" data-notion-highlight="default">well known port(ftp21, web80, dns53, etc)<br/>Server Services</mark></td></tr><tr id="3f12fc0c-d770-8056-8313-e775caf7ab47" dir="ltr"><td id="[Kdb" class="" style="width:112px"><mark class="highlight-default" data-notion-highlight="default">1024~49151</mark></td><td id="nM&gt;{" class="" style="width:349px">Registered Port</td></tr><tr id="3f12fc0c-d770-806f-b80c-faedec879794" dir="ltr"><td id="[Kdb" class="" style="width:112px"><mark class="highlight-default" data-notion-highlight="default">49152~65535</mark></td><td id="nM&gt;{" class="" style="width:349px">Dynamic Allocated (and/or Private) Port</td></tr></tbody></table></div></aside><p id="3f12fc0c-d770-80a1-a502-f098cefa49f9" class="" dir="auto">연결되면 : 가상회선(virtual circuits)의 연결 확립, 관리, 해체<br/>                    ㄴ 흐름제어, 오류제어</p></li></ol><ol type="1" id="3f12fc0c-d770-8049-9103-e9f115838afe" class="numbered-list" start="5" dir="auto"><li>Session 양단간 서비스<br/><mark class="highlight-blue" data-notion-highlight="blue"><strong>로그인 - L4 e2e connection</strong></mark><br/>메일 <mark class="highlight-red" data-notion-highlight="red"><strong>서비스를 받기 위해</strong></mark> <mark class="highlight-blue" data-notion-highlight="blue"><strong>로그인<br/></strong></mark><mark class="highlight-default" data-notion-highlight="default">이후 사용자별 서비스, 데이터</mark><br/><figure id="3f12fc0c-d770-80d2-aab3-c857711562b8" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sys%2Bnetwork/1%EC%9D%BC%EC%B0%A8/tistory_images_1%EC%9D%BC%EC%B0%A8/17.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sys%2Bnetwork/1%EC%9D%BC%EC%B0%A8/tistory_images_1%EC%9D%BC%EC%B0%A8/17.png"><img style="width:520.90625px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sys%2Bnetwork/1%EC%9D%BC%EC%B0%A8/tistory_images_1%EC%9D%BC%EC%B0%A8/17.png"/></a></figure><figure id="3f12fc0c-d770-8033-b901-ff781350067f" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sys%2Bnetwork/1%EC%9D%BC%EC%B0%A8/tistory_images_1%EC%9D%BC%EC%B0%A8/18.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sys%2Bnetwork/1%EC%9D%BC%EC%B0%A8/tistory_images_1%EC%9D%BC%EC%B0%A8/18.png"><img style="width:317.96875px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sys%2Bnetwork/1%EC%9D%BC%EC%B0%A8/tistory_images_1%EC%9D%BC%EC%B0%A8/18.png"/></a></figure></li></ol><ol type="1" id="3f12fc0c-d770-80c5-abe2-f4cc973c0085" class="numbered-list" start="6" dir="auto"><li>Presentation 데이터 형태 결정<figure id="3f12fc0c-d770-80e3-8b54-c3736cacb8b9" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sys%2Bnetwork/1%EC%9D%BC%EC%B0%A8/tistory_images_1%EC%9D%BC%EC%B0%A8/19.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sys%2Bnetwork/1%EC%9D%BC%EC%B0%A8/tistory_images_1%EC%9D%BC%EC%B0%A8/19.png"><img style="width:520.890625px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sys%2Bnetwork/1%EC%9D%BC%EC%B0%A8/tistory_images_1%EC%9D%BC%EC%B0%A8/19.png"/></a></figure><figure id="3f12fc0c-d770-80e3-b42e-e71748079564" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sys%2Bnetwork/1%EC%9D%BC%EC%B0%A8/tistory_images_1%EC%9D%BC%EC%B0%A8/20.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sys%2Bnetwork/1%EC%9D%BC%EC%B0%A8/tistory_images_1%EC%9D%BC%EC%B0%A8/20.png"><img style="width:326.984375px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sys%2Bnetwork/1%EC%9D%BC%EC%B0%A8/tistory_images_1%EC%9D%BC%EC%B0%A8/20.png"/></a></figure><p id="3f12fc0c-d770-80e7-bab8-c8b2fddf4039" class="" dir="auto">서비스할 데이터 형태 결정<br/>확장자(데이터의 형태) .exe .doc .zip 등등</p></li></ol><ol type="1" id="3f12fc0c-d770-804e-89cf-dc1ff2cac390" class="numbered-list" start="7" dir="auto"><li>Application 사용자 인터페이스 (User I/F)<figure id="3f12fc0c-d770-803a-a1be-ea20898d715f" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sys%2Bnetwork/1%EC%9D%BC%EC%B0%A8/tistory_images_1%EC%9D%BC%EC%B0%A8/21.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sys%2Bnetwork/1%EC%9D%BC%EC%B0%A8/tistory_images_1%EC%9D%BC%EC%B0%A8/21.png"><img style="width:520.9375px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sys%2Bnetwork/1%EC%9D%BC%EC%B0%A8/tistory_images_1%EC%9D%BC%EC%B0%A8/21.png"/></a></figure><p id="3f12fc0c-d770-802d-9f87-dfd4f17dfb4f" class="" dir="auto">사용자와 만남</p></li></ol><hr id="3f12fc0c-d770-80d0-a040-c44f44a60084" dir="auto"/><figure id="3f12fc0c-d770-802a-afba-eabed57e6b6a" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sys%2Bnetwork/1%EC%9D%BC%EC%B0%A8/tistory_images_1%EC%9D%BC%EC%B0%A8/22.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sys%2Bnetwork/1%EC%9D%BC%EC%B0%A8/tistory_images_1%EC%9D%BC%EC%B0%A8/22.png"><img style="width:304px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sys%2Bnetwork/1%EC%9D%BC%EC%B0%A8/tistory_images_1%EC%9D%BC%EC%B0%A8/22.png"/></a></figure><hr id="3f12fc0c-d770-80e5-8603-c8866a9133a3" dir="auto"/><h2 id="3f12fc0c-d770-80ff-addf-c5430cabaa4b" class="" dir="auto">Layer와 Data전송</h2><p id="3f12fc0c-d770-8064-b57c-fd0b37167e5e" class="" dir="auto">데이터 송신 과정</p><figure id="3f12fc0c-d770-80ab-8121-dfe5b73f274c" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sys%2Bnetwork/1%EC%9D%BC%EC%B0%A8/tistory_images_1%EC%9D%BC%EC%B0%A8/23.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sys%2Bnetwork/1%EC%9D%BC%EC%B0%A8/tistory_images_1%EC%9D%BC%EC%B0%A8/23.png"><img style="width:558.96875px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sys%2Bnetwork/1%EC%9D%BC%EC%B0%A8/tistory_images_1%EC%9D%BC%EC%B0%A8/23.png"/></a></figure><p id="3f12fc0c-d770-8074-a22a-c3fbe9a03b64" class="" dir="auto">PDU : Protocol(Porcess) data Unit  , 데이터 계층 처리 단위<br/>Control information (CI) + data로 하위계층 보냄<br/>CI(TCP Header, IP Header, L2 Header)</p><table id="3f12fc0c-d770-8060-9605-d54e5116375e" class="simple-table" dir="ltr"><tbody><tr id="3f12fc0c-d770-80e7-b2fa-ed27b98f3959" dir="ltr"><td id="cmje" class="" style="width:191.33333333333334px">Layer</td><td id="^CUw" class="" style="width:191.33333333333334px">PDU</td></tr><tr id="3f12fc0c-d770-8068-951f-dc330edc9f3d" dir="ltr"><td id="cmje" class="" style="width:191.33333333333334px">L4</td><td id="^CUw" class="" style="width:191.33333333333334px">Segment / Data stream</td></tr><tr id="3f12fc0c-d770-80d9-8f89-da68b757974a" dir="ltr"><td id="cmje" class="" style="width:191.33333333333334px">L3</td><td id="^CUw" class="" style="width:191.33333333333334px">Packet / Datagram</td></tr><tr id="3f12fc0c-d770-8000-988b-f55b59a21e18" dir="ltr"><td id="cmje" class="" style="width:191.33333333333334px">L2</td><td id="^CUw" class="" style="width:191.33333333333334px">Frame</td></tr><tr id="3f12fc0c-d770-804d-825e-e20aa592f219" dir="ltr"><td id="cmje" class="" style="width:191.33333333333334px">L1</td><td id="^CUw" class="" style="width:191.33333333333334px">Bits</td></tr></tbody></table><p id="3f12fc0c-d770-8072-9481-dad73d4ff3e4" class="" dir="auto">데이터 수신 과정</p><figure id="3f12fc0c-d770-80e3-969c-d72bb206c1d8" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sys%2Bnetwork/1%EC%9D%BC%EC%B0%A8/tistory_images_1%EC%9D%BC%EC%B0%A8/24.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sys%2Bnetwork/1%EC%9D%BC%EC%B0%A8/tistory_images_1%EC%9D%BC%EC%B0%A8/24.png"><img style="width:558.984375px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sys%2Bnetwork/1%EC%9D%BC%EC%B0%A8/tistory_images_1%EC%9D%BC%EC%B0%A8/24.png"/></a></figure><h2 id="3f12fc0c-d770-8099-b983-d9844564d3db" class="" dir="auto">Layer와 TCP/IP비교<br/></h2><figure id="3f12fc0c-d770-80fe-a11d-fc3bcc83d972" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sys%2Bnetwork/1%EC%9D%BC%EC%B0%A8/tistory_images_1%EC%9D%BC%EC%B0%A8/25.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sys%2Bnetwork/1%EC%9D%BC%EC%B0%A8/tistory_images_1%EC%9D%BC%EC%B0%A8/25.png"><img style="width:558.984375px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sys%2Bnetwork/1%EC%9D%BC%EC%B0%A8/tistory_images_1%EC%9D%BC%EC%B0%A8/25.png"/></a></figure><p id="3f12fc0c-d770-8009-8e0a-cf2580640149" class="" dir="auto">TCP/IP</p><p id="3f12fc0c-d770-80e8-b54c-e587a565f2bc" class="" dir="auto">Data Link, Physical 관련 계층정의 없음 → Network Interface로 퉁침<br/>3계층에서 IP로만 연결하면 나머진 알아서, 그 아랫층 정의 없음<br/></p><figure id="3f12fc0c-d770-8031-aadb-e943974eb12f" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sys%2Bnetwork/1%EC%9D%BC%EC%B0%A8/tistory_images_1%EC%9D%BC%EC%B0%A8/26.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sys%2Bnetwork/1%EC%9D%BC%EC%B0%A8/tistory_images_1%EC%9D%BC%EC%B0%A8/26.png"><img style="width:407.96875px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sys%2Bnetwork/1%EC%9D%BC%EC%B0%A8/tistory_images_1%EC%9D%BC%EC%B0%A8/26.png"/></a></figure><p id="3f12fc0c-d770-8077-8721-fc808b5a55ed" class="" dir="auto">Network Interface → IEEE에서 정의 ethernet 802.3<br/>WAN제외 대부부분 MAC주소</p><h2 id="3f12fc0c-d770-80e7-80d6-e9d8d952c0a1" class="" dir="auto">Data 전송</h2><figure id="3f12fc0c-d770-804f-a0e8-c29888c09a08" class="image" data-notion-image="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sys%2Bnetwork/1%EC%9D%BC%EC%B0%A8/tistory_images_1%EC%9D%BC%EC%B0%A8/27.png" dir="ltr"><a href="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sys%2Bnetwork/1%EC%9D%BC%EC%B0%A8/tistory_images_1%EC%9D%BC%EC%B0%A8/27.png"><img style="width:558.984375px" src="https://raw.githubusercontent.com/kminsu99/35th-SSLC-docs/main/sys%2Bnetwork/1%EC%9D%BC%EC%B0%A8/tistory_images_1%EC%9D%BC%EC%B0%A8/27.png"/></a></figure></div></article>
